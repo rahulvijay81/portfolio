@@ -466,6 +466,10 @@
   font-family: "Labrada", serif;
 }
 @media (max-width: 767px) {
+  .contactbackground{
+    width: 100%;
+    height: 100%;
+  }
   .line {
     margin-top: 7.5rem;
   }
