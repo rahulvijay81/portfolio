@@ -413,8 +413,8 @@
 }
 
 @media (max-width: 767px) {
-  .project-card{
-    padding-top: 50px !important;
+  .project-section{
+    padding-top: 40px !important;
   }
 }
 
