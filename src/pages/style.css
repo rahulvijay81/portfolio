@@ -356,7 +356,6 @@
 .project-section {
   position: relative !important;
   padding-top: 10px !important;
-  background-image: var(--section-background-color) !important;
 }
 .project-card {
   padding-top: 20px;
@@ -411,6 +410,12 @@
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
+}
+
+@media (max-width: 767px) {
+  .project-card{
+    padding-top: 50px !important;
+  }
 }
 
 /* Contactpage Style */
