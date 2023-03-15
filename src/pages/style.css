@@ -458,12 +458,17 @@
   background-color: rgba(51, 51, 51, 0.2);
 }
 .line {
-  margin-top: 12rem;
+  margin-top: 11rem;
 }
 .copyright {
-  padding: 2px;
+  padding: 1px;
   text-align: center;
-  font-family: "Labrada", serif;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.copyright span{
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 @media (max-width: 767px) {
   .line {
