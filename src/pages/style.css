@@ -474,4 +474,7 @@
   .line {
     margin-top: 8rem;
   }
+  .contactpara br {
+    display: none;
+  }
 }
