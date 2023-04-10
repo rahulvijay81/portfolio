@@ -6,7 +6,7 @@ This is a personal portfolio website built with React.js and Bootstrap, utilizin
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-#Features
+# Features
 
 Multiple Pages (React Router): The website has multiple pages to showcase various aspects of Rahul's skills and projects.
 
