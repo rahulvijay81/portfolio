@@ -15,9 +15,8 @@ function Contactpage() {
           }}
         >Say Hello</button>
         <span></span>
-        <hr className='line' />
-        <p className='copyright'>© Copyright 2023.
-        <br /> 
+        <p className='copyright'>© Copyright 2023
+        <hr />
         Designed & Built by <span>rahulvijay</span></p>
       </Container>
     </div>

@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Labrada&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* Header style */
 
@@ -70,22 +69,24 @@
   transform: rotate(-135deg) !important;
   opacity: 0.9 !important;
 }
-.logo{
+.logo {
   background-image: url(../Assets/logor.png);
   background-size: cover;
   width: 90px;
   height: 80px;
 }
 
-.navbar-nav .nav-link {
+.nav-link {
   color: white !important;
   font-size: 16px !important;
   letter-spacing: 1px;
   font-weight: 500 !important;
-  padding-right: 1rem !important;
-  padding-left: 1.5rem !important;
+  padding-right: 2rem !important;
+  padding-left: 1rem !important;
+  font-family: 'Poppins';
 }
-.navbar-nav .nav-link:hover {
+
+.nav-link:hover {
   color: #191919 !important;
 }
 .resumebtn {
@@ -184,7 +185,7 @@
   }
 }
 .Typewriter__wrapper {
-  font-size: 2.0em !important;
+  font-size: 2em !important;
   color: #191919 !important;
   font-weight: 600 !important;
   letter-spacing: 1px !important;
@@ -201,7 +202,7 @@
   letter-spacing: 1px !important;
 }
 .nametext {
-  font-size: 2.0em !important;
+  font-size: 2em !important;
   color: #191919 !important;
   font-weight: 600 !important;
   letter-spacing: 1px !important;
@@ -267,7 +268,8 @@
 
 .aboutpagebackground {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
@@ -308,14 +310,16 @@
 }
 .aboutdetails {
   font-size: 1.1em !important;
+  font-family: 'Poppins';
 }
 .skilllist li {
   letter-spacing: 1px;
-  font-family: "Exo 2", sans-serif;
+  font-family: 'Poppins';
 }
 .skilllist {
   font-weight: 600;
-  list-style-type: "⮞  ";
+  list-style-type: none;
+  font-family: 'Poppins';
 }
 .skilllist li:hover {
   transform: scale(1.05);
@@ -364,7 +368,9 @@
   padding-right: 25px !important;
   height: auto !important;
 }
-
+.card-text{
+  font-family: 'Poppins';
+}
 .project-card-view {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px !important;
@@ -394,18 +400,19 @@
   justify-content: center;
   font-size: 18px;
   letter-spacing: 1px;
+  font-family: 'Poppins';
 }
 
 .btn-primary {
-  color: #fff !important;
+  color: #191919 !important;
   background-color: transparent !important;
   border-color: #191919 !important;
 }
 
 .btn-primary:hover {
-  color: #191919 !important;
-  background-color: #c850c0 !important;
-  border-color: #c850c0 !important;
+  color: #e8e8e8 !important;
+  background-color: transparent !important;
+  border-color: #e8e8e8 !important;
 }
 .btn:focus {
   outline: none !important;
@@ -413,7 +420,7 @@
 }
 
 @media (max-width: 767px) {
-  .project-section{
+  .project-section {
     padding-top: 40px !important;
   }
 }
@@ -421,7 +428,8 @@
 /* Contactpage Style */
 .contactbackground {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
@@ -444,6 +452,7 @@
   font-size: 16px;
   letter-spacing: 1px;
   padding-bottom: 1rem;
+  font-family: 'Poppins';
 }
 .contactbtn {
   display: block;
@@ -457,23 +466,20 @@
 .contactbtn:hover {
   background-color: rgba(51, 51, 51, 0.2);
 }
-.line {
-  margin-top: 11rem;
-}
 .copyright {
-  padding: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
   font-size: 12px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Poppins';
 }
-.copyright span{
+.copyright span {
   font-weight: 700;
   letter-spacing: 1px;
 }
 @media (max-width: 767px) {
-  .line {
-    margin-top: 8rem;
-  }
   .contactpara br {
     display: none;
   }
