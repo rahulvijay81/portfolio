@@ -1,13 +1,13 @@
-import React from 'react'
-import '../../pages/style.css';
+import React from "react";
+import "../../pages/style.css";
 import ProjectCard from "./ProjectCard";
-import { Container, Row, Col } from 'react-bootstrap'
-import useradminpanel from '../../Assets/Admin-Panel-Dashboard.png'
-import olximage from '../../Assets/olx-clone image.png'
-import netfliximage from '../../Assets/React-App-netflix-clone.png'
-import gridlinesbuilders from '../../Assets/Gridlinesbuilders.png'
-import charlespizza from '../../Assets/Charlestown-Pizza.png'
-import todolist from '../../Assets/todolist.png'
+import { Container, Row, Col } from "react-bootstrap";
+import useradminpanel from "../../Assets/Admin-Panel-Dashboard.png";
+import olximage from "../../Assets/olx-clone image.png";
+import netfliximage from "../../Assets/React-App-netflix-clone.png";
+import gridlinesbuilders from "../../Assets/Gridlinesbuilders.png";
+import charlespizza from "../../Assets/Charlestown-Pizza.png";
+import todolist from "../../Assets/todolist.png";
 
 function Projectlist() {
   return (
@@ -72,13 +72,12 @@ function Projectlist() {
                 title="To Do List"
                 description=" To-Do App that build will allow a user to add a task to a list of to-do items. Once the task is added, the user will be able to delete it as completed once it has done."
                 ghLink="https://todolist-rahul81.netlify.app/"
-
               />
             </Col>
           </Row>
         </Container>
       </Container>
     </div>
-  )
+  );
 }
-export default Projectlist
+export default Projectlist;

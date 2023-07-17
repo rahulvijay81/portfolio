@@ -23,7 +23,7 @@ function Aboutpage() {
                                 </Col>
                                 <Col md={5}>
                                     <li>React Js</li>
-                                    <li>Redux Js</li>
+                                    <li>Sass/Scss</li>
                                     <li>React-Bootsrap</li>
                                     <li>Material-ui</li>
                                     <li>Git/Github</li>
