@@ -9,7 +9,7 @@
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
   padding: 0.5rem 3rem !important;
-  font-size: 1.3rem !important;
+  font-size: 16px !important;
 }
 .sticky {
   transition: all 0.3s ease-out 0s !important;
@@ -70,7 +70,7 @@
   opacity: 0.9 !important;
 }
 .logo {
-  background-image: url(../Assets/logor.png);
+  background-image: url(../assets/logor.png);
   background-size: cover;
   width: 90px;
   height: 80px;
@@ -90,13 +90,15 @@
   color: #191919 !important;
 }
 .resumebtn {
-  margin-left: 30px;
-  border-radius: 25px;
-  padding: 0 25px;
+  width: 150px;
+  margin-left: 30px !important;
+  border-radius: 20px !important;
+  padding: 0 20px !important;
   background-color: #4158d0;
+  color: #e8e8e8 !important;
   background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 100%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
-  border: none;
+  border: none !important;
 }
 
 @media (max-width: 767px) {
@@ -109,7 +111,7 @@
   }
   .responsive-navbar {
     width: 100%;
-    height: 250px;
+    height: 190px;
     border-radius: 10px;
     background-color: #4158d0;
     background-image: linear-gradient(
@@ -120,16 +122,17 @@
     );
   }
   .nav-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
   .resumebtn {
-    width: 150px;
-    display: block;
-    margin: 5px auto;
-    padding: 8px 5px;
-    letter-spacing: 1px;
+    width: 200px !important;
+    display: block !important;
+    margin: 5px auto !important;
+    padding: 10px 0px !important;
+    font-size: 16px !important;
+    letter-spacing: 1px !important;
   }
 }
 
@@ -211,22 +214,22 @@
   margin-top: 50px;
   max-width: 550px;
   height: 400px;
-  background-image: url(../Assets/Web-designer-1024x821.webp);
+  background-image: url(../assets/Web-designer-1024x821.webp);
   background-size: cover;
   background-position: center;
 }
 .socailmediabtn {
   margin-top: 2rem;
   width: 90px;
-  height: 45px;
+  height: 50px;
   background-color: transparent;
   border: none;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 .socailmediabtn:hover {
-  background-color: antiquewhite;
+  background-color: rgba(255, 255, 255, 0.2);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .icon {
   font-size: 30px;
@@ -329,7 +332,7 @@
 .webimage {
   max-width: 500px;
   height: 350px;
-  background-image: url(../Assets/web-removebg-preview.png);
+  background-image: url(../assets/web-removebg-preview.png);
   background-size: cover;
   background-position: center;
 }
@@ -339,8 +342,8 @@
     height: 100%;
   }
   .textbackground {
-    display: block;
-    margin: 0 auto;
+    display: block !important;
+    margin: 0 auto !important;
   }
 }
 
@@ -395,12 +398,12 @@
   border-radius: 10px !important;
 }
 .viewbtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 18px !important;
   letter-spacing: 1px;
-  font-family: 'Poppins';
+  font-family: 'Poppins' !important;
 }
 
 .btn-primary {
@@ -484,4 +487,23 @@
   .contactpara br {
     display: none;
   }
+}
+
+/* skils style  */
+.skillsContainer{
+  margin-top: 50px;
+}
+.skill--box{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 20px;
+}
+.skill-image{
+  width: 60px;
+  height: 50px;
 }
