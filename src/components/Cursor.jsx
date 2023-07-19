@@ -48,12 +48,12 @@ const Cursor = () => {
     <>
       {mousePositions.map((position, index) => (
         <div
+          className='cursor'
           key={index}
           style={{
             ...duplicateCursorStyles,
-            transform: `translate(${position.x - 16}px, ${position.y - 16}px) scale(${
-              1 + 0.02 * (mousePositions.length - index)
-            })`,
+            transform: `translate(${position.x - 16}px, ${position.y - 16}px) scale(${1 + 0.02 * (mousePositions.length - index)
+              })`,
             opacity: 1 - 0.1 * (mousePositions.length - index),
           }}
         />
