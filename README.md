@@ -4,6 +4,8 @@ This is a personal portfolio website built with React.js and Bootstrap, utilizin
 
 ![Rahul-Portfolio](https://user-images.githubusercontent.com/118264222/224553983-d0782a0a-7fb0-479e-a491-c7124b286d03.png)
 
+https://github.com/rahulvijay81/portfolio/blob/main/Rahul-Vijay.png
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Features
