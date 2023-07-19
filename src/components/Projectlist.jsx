@@ -1,11 +1,11 @@
 import ProjectCard from "../components/Projectcard";
 import { Container, Row, Col } from "react-bootstrap";
-import useradminpanel from "../assets/adminpanel.png";
-import olximage from "../assets/olx-clone image.png";
-import netfliximage from "../assets/React-App-netflix-clone.png";
-import gridlinesbuilders from "../assets/Gridlinesbuilders.png";
-import charlespizza from "../assets/Charlestown-Pizza.png";
-import todolist from "../assets/todolist.png";
+import adminpanel from '../assets/images/adminpanel.jpg'
+import olximage from "../assets/images/olximage.jpg";
+import netfliximage from "../assets/images/netflix.jpg";
+import gridlinesbuilders from "../assets/images/Gridlinesbuilders.jpg";
+import charlespizza from "../assets/images/pizza.jpg";
+import todolist from "../assets/images/todolist.jpg";
 import "../pages/style.css";
 
 
@@ -17,7 +17,7 @@ function Projectlist() {
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col md={4} className="project-card">
               <ProjectCard
-                imgPath={useradminpanel}
+                imgPath={adminpanel}
                 isBlog={false}
                 title="Dashboard Panel"
                 description="User Admin Dashboard created with React js, Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid to build this entire application. This application consists of Light and Dark Mode, four different Charts, three different Data Table Pages, FAQ Page, Form Page, and Calendar Integration."
