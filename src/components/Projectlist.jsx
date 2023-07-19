@@ -1,6 +1,6 @@
 import ProjectCard from "../components/Projectcard";
 import { Container, Row, Col } from "react-bootstrap";
-import useradminpanel from "../assets/Admin-Panel-Dashboard.png";
+import useradminpanel from "../assets/adminpanel.png";
 import olximage from "../assets/olx-clone image.png";
 import netfliximage from "../assets/React-App-netflix-clone.png";
 import gridlinesbuilders from "../assets/Gridlinesbuilders.png";
