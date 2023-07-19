@@ -46,7 +46,7 @@ The website will be available at `http://localhost:3000` in your web browser.
 
 ## Contact Information
 
-You can reach out to me via email at [your.email@example.com](mailto:rahulvijay8156@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/rahulvijay81/).
+You can reach out to me via email at [rahulvijay8156@gmail.com](mailto:rahulvijay8156@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/rahulvijay81/).
 
 Feel free to explore my portfolio and learn more about my skills and projects. Thank you for visiting! 🙏
 
