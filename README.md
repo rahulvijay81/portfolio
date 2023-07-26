@@ -39,7 +39,7 @@ For more information about deploying a React application, refer to the [deployme
 
 4. Run the development server:
    ```
-   npm start
+   npm run dev
    ```
 
 The website will be available at `http://localhost:3000` in your web browser.
