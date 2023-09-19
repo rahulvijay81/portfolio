@@ -7,15 +7,15 @@ function Contactpage() {
       <Container>
         <h2 className="contacthead">Get In Touch</h2>
         <p className="contactpara">
-          I’m currently searching for opportunities for a front-end developer
-          role. <br /> If there is any vacancy my inbox is always open. Whether
-          <br /> you have any further questions or just want to say hi, <br />
-          I’ll try my best to get back to you!
+          I’m currently searching for internship opportunities as a developer
+          . <br />Always open to queries and eager to assist . Whether
+          <br />  you have more questions or simply want to greet,  <br />
+          We'll definitely connect !
         </p>
         <button
           className="contactbtn"
           onClick={() => {
-            window.open("https://www.instagram.com/rahulvijay81/");
+            window.open("https://www.linkedin.com/in/rohan-raj-313835231/");
           }}
         >
           Say Hello
