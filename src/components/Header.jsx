@@ -63,7 +63,7 @@ function Header() {
             </NavLink>
           </Nav.Item>
 
-          <Nav.Item>
+          {/* <Nav.Item>
             <NavLink
               className="nav-link"
               to="/project"
@@ -71,7 +71,7 @@ function Header() {
             >
               Projects
             </NavLink>
-          </Nav.Item>
+          </Nav.Item> */}
 
           <Nav.Item>
             <NavLink

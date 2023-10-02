@@ -9,7 +9,7 @@
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
   padding: 0.5rem 3rem !important;
-  font-size: 16px !important;
+  font-size: 1rem !important;
 }
 .sticky {
   transition: all 0.3s ease-out 0s !important;
@@ -71,6 +71,7 @@
 }
 .logo {
   background-image: url(../assets/logor.png);
+  background-repeat: no-repeat;
   background-size: cover;
   width: 90px;
   height: 80px;
@@ -78,7 +79,7 @@
 
 .nav-link {
   color: white !important;
-  font-size: 16px !important;
+  font-size: 1rem !important;
   letter-spacing: 1px;
   font-weight: 500 !important;
   padding-right: 2rem !important;
@@ -90,11 +91,12 @@
   color: #191919 !important;
 }
 .resumebtn {
-  width: 150px;
-  margin-left: 30px !important;
-  border-radius: 20px !important;
+  width: 120px;
+  margin-left: 2rem !important;
+  border-radius: 5px !important;
   padding: 0 20px !important;
-  background-color: #4158d0;
+  font-size: 1.1rem !important;
+  letter-spacing: 1px !important;
   color: #e8e8e8 !important;
   background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 100%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
@@ -111,8 +113,8 @@
   }
   .responsive-navbar {
     width: 100%;
-    height: 190px;
-    border-radius: 10px;
+    height: 150px;
+    border-radius: 5px;
     background-color: #4158d0;
     background-image: linear-gradient(
       43deg,
@@ -131,7 +133,7 @@
     display: block !important;
     margin: 5px auto !important;
     padding: 10px 0px !important;
-    font-size: 16px !important;
+    font-size: 1.1rem !important;
     letter-spacing: 1px !important;
   }
 }
@@ -140,7 +142,7 @@
 
 .homepagebackground {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
@@ -215,6 +217,7 @@
   max-width: 550px;
   height: 400px;
   background-image: url(../assets/Web-designer-1024x821.webp);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -333,6 +336,7 @@
   max-width: 500px;
   height: 350px;
   background-image: url(../assets/web-removebg-preview.png);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
