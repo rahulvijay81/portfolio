@@ -3,12 +3,14 @@ export const skillsData = [
     'CSS',
     'Javascript',
     'React',
+    'Next JS',
     'ViteJS',
     'Git',
     'MaterialUI',
     'Bootstrap',
     'Tailwind',
     'Figma',
+    'Firebase',
     'Photoshop',
 ]
 
