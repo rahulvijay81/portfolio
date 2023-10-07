@@ -21,7 +21,9 @@ function Contactpage() {
         <p className="copyright">
           © Copyright 2023
           <hr />
-          Designed & Built by <span>rahulvijay</span>
+          Designed & Built by <span onClick={() => {
+            window.open("https://www.instagram.com/rahulvijay81/");
+          }}>rahulvijay</span>
         </p>
       </Container>
     </div>
