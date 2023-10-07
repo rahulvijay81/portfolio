@@ -290,12 +290,12 @@
   height: 100%;
   padding: 1rem;
   background-color: transparent;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px !important;
 }
 .aboutmetext {
-  font-size: 2em !important;
+  font-size: 2.1em !important;
   color: #191919 !important;
   font-weight: 600 !important;
   letter-spacing: 1px !important;
@@ -315,7 +315,7 @@
   }
 }
 .aboutdetails {
-  font-size: 1.1em !important;
+  font-size: 1.1rem !important;
   font-family: 'Poppins';
 }
 .skilllist li {
@@ -455,21 +455,23 @@
   letter-spacing: 1px;
 }
 .contactpara {
-  padding-top: 1rem;
-  text-align: center;
-  font-size: 16px;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1rem;
   letter-spacing: 1px;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   font-family: 'Poppins';
 }
 .contactbtn {
   display: block;
-  margin: 0 auto;
-  width: 150px;
+  margin: 1rem auto;
+  width: 200px;
   height: 50px;
+  font-size: 1rem;
   border: solid 2px;
   background-color: transparent;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  font-family: 'Poppins';
 }
 .contactbtn:hover {
   background-color: rgba(51, 51, 51, 0.2);
@@ -495,7 +497,7 @@
 
 /* skils style  */
 .skillsContainer{
-  margin-top: 50px;
+  margin-top: 2rem;
 }
 .skill--box{
   width: 100px;
@@ -504,10 +506,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 8px;
-  margin-left: 20px;
+  gap: 10px;
+  margin-left: 1rem;
 }
 .skill-image{
   width: 60px;
   height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

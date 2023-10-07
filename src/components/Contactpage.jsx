@@ -7,18 +7,15 @@ function Contactpage() {
       <Container>
         <h2 className="contacthead">Get In Touch</h2>
         <p className="contactpara">
-          I’m currently searching for opportunities for a front-end developer
-          role. <br /> If there is any vacancy my inbox is always open. Whether
-          <br /> you have any further questions or just want to say hi, <br />
-          I’ll try my best to get back to you!
+          I'd love to connect and explore exciting opportunities with you! Whether you have interesting projects, creative ideas, or just want to chat, please don't hesitate to reach out. My inbox is open 24/7!
         </p>
         <button
           className="contactbtn"
           onClick={() => {
-            window.open("https://www.instagram.com/rahulvijay81/");
+            window.open("https://www.linkedin.com/in/rahulvijay81/");
           }}
         >
-          Say Hello
+          Connect Now 🚀
         </button>
         <span></span>
         <p className="copyright">
