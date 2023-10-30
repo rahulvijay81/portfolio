@@ -19,9 +19,9 @@ function Projectlist() {
               <ProjectCard
                 imgPath={adminpanel}
                 isBlog={false}
-                title="Ta - Allocation System"
+                title="  Landing Page "
                 description="User Admin Dashboard created with React js, Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid to build this entire application. This application consists of Light and Dark Mode, four different Charts, three different Data Table Pages, FAQ Page, Form Page, and Calendar Integration."
-                ghLink="https://rahul-dashboard-pannel.netlify.app"
+                ghLink="https://github.com/rrhan32/basic_home_page_using_HTML_CSS"
               />
             </Col>
 
@@ -30,8 +30,8 @@ function Projectlist() {
                 imgPath={olximage}
                 isBlog={false}
                 title="Landing Page"
-                description="Olx-clone builds with react js. using firebase as a backend and deploying in firebase. Olx-Clone is a potential classified advertisement website that categorizes objects in a user-friendly manner & displays them as advertisements.. Classifieds can be posted that involve selling, and buying using React-router, context, react hooks."
-                ghLink="https://olx-clone-rahul.netlify.app/"
+                description="Spearheaded a cutting-edge TA Allocation Project utilizing a technology stack encompassing JavaScript, MongoDB, algorithms, Node.js, and Express. This innovative system optimized the allocation of Teaching Assistants to courses, streamlining the assignment process by automating it."            
+                ghLink="https://github.com/rrhan32/TA_allocation"
               />
             </Col>
 
@@ -39,9 +39,9 @@ function Projectlist() {
               <ProjectCard
                 imgPath={netfliximage}
                 isBlog={false}
-                title="Netflix-Clone"
-                description="This project is a simplified front-end clone of Netflix. It was created with React js. It uses TMDB (The Movie Data Base ) API and uses the Axios tool. Users can click movie images with embedded YouTube trailers or related videos about the movie."
-                ghLink="https://react-netflixweb-clone.netlify.app/"
+                title="Quizzio (Ongoing)"
+                description="Crafted an engaging Quiz App using React.js, offering users an interactive platform to test their knowledge across various subjects. With a user-friendly interface, the app presents thought-provoking questions and tracks performance in real-time , providing immediate feedback and opportunities for learning and improvement."
+                ghLink="https://github.com/rrhan32/QUIZZIO"
               />
             </Col>
 
@@ -50,12 +50,12 @@ function Projectlist() {
                 imgPath={gridlinesbuilders}
                 isBlog={false}
                 title="WatchAi Website"
-                description="WatchAi is a static webpage built with HTML, CSS, and JavaScript. Users can see images of their work and contact information that helps to connect the home builders through a webpage. webpage builds responsive to multiple sizes of devices."
-                ghLink="https://gridlinesbuilders.in/"
+                description="Designed and developed a dynamic static website using HTML, CSS, JavaScript, and Bootstrap. This project showcases a blend of web technologies and Bootstrap's responsive framework to create an interactive and appealing design ."
+                ghLink="https://github.com/rrhan32/WeSecure"
               />
             </Col>
 
-            <Col md={4} className="project-card">
+            {/* <Col md={4} className="project-card">
               <ProjectCard
                 imgPath={charlespizza}
                 isBlog={false}
@@ -63,15 +63,15 @@ function Projectlist() {
                 description="Charlestown pizza is a static website completely build with bootstrap with fully responsive."
                 ghLink="https://rahulvijay81.github.io/Pizzastore-bootstrap/"
               />
-            </Col>
+            </Col> */}
 
             <Col md={4} className="project-card">
               <ProjectCard
                 imgPath={todolist}
                 isBlog={false}
                 title="Weather App"
-                description=" To-Do App that build will allow a user to add a task to a list of to-do items. Once the task is added, the user will be able to delete it as completed once it has done."
-                ghLink="https://todolist-rahul81.netlify.app/"
+                description="Developed a user-friendly Weather App that provides real-time location-based weather updates. Users simply enter a location, and the app delivers accurate and up-to-the-minute weather information."
+                ghLink="https://github.com/rrhan32/Weather_app"
               />
             </Col>
           </Row>

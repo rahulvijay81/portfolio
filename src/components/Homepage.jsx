@@ -16,7 +16,7 @@ function Home() {
         <Row>
           <Col md={7}>
             <h2 className='headtext'>Hello <span className='wave'>👋 </span></h2>
-            <h2 className='nametext'>Im Rohan Raj</h2>
+            <h2 className='nametext'>I am Rohan Raj</h2>
             <span></span>
             <Text />
             <button onClick={() => {
@@ -28,11 +28,11 @@ function Home() {
             }}
               className='socailmediabtn'><FaLinkedinIn className='icon' /></button>
             <button onClick={() => {
-              window.open("https://twitter.com/rahulvijay8156");
+              window.open("https://twitter.com/rohanra45581731");
             }}
               className='socailmediabtn'><AiOutlineTwitter className='icon' /></button>
             <button onClick={() => {
-              window.open("https://instagram.com/rahulvijay81");
+              window.open("https://instagram.com/ro.han0745");
             }}
               className='socailmediabtn'><AiFillInstagram className='icon' /></button>
           </Col>

@@ -24,7 +24,7 @@ function Contactpage() {
         <p className="copyright">
           © Copyright 2023
           <hr />
-          Designed & Built by <span>rahulvijay</span>
+          Designed & Built by <span>Rohan</span>
         </p>
       </Container>
     </div>
