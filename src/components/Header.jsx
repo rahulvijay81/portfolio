@@ -47,6 +47,11 @@ function Header() {
           <Nav.Item>
             <NavLink
               className="nav-link"
+              style={({isActive})=>(
+                {
+                  color: isActive ? 'black':'white',
+                }
+              )}
               to="/"
               onClick={() => updateExpanded(false)}
             >
@@ -56,6 +61,11 @@ function Header() {
           <Nav.Item>
             <NavLink
               className="nav-link"
+              style={({isActive})=>(
+                {
+                  color: isActive ? 'black':'white',
+                }
+              )}
               to="/about"
               onClick={() => updateExpanded(false)}
             >
@@ -76,6 +86,11 @@ function Header() {
           <Nav.Item>
             <NavLink
               className="nav-link"
+              style={({isActive})=>(
+                {
+                  color: isActive ? 'black':'white',
+                }
+              )}
               to="/contact"
               onClick={() => updateExpanded(false)}
             >
