@@ -42,7 +42,7 @@ For more information about deploying a React application, refer to the [deployme
    npm run dev
    ```
 
-The website will be available at `http://localhost:3000` in your web browser.
+The website will be available at `http://localhost:5173` in your web browser.
 
 ## Contact Information
 
