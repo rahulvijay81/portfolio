@@ -2,6 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Marquee from "react-fast-marquee";
 import { skillsData } from '../data/SkillsData';
 import { skillsImage } from '../utils/SkillsImage';
+import AboutImage from "../Assets/Web-designer-1024x821.png"
 
 import "../pages/style.css";
 
@@ -37,6 +38,7 @@ function Aboutpage() {
                     </Col>
                     <Col md={5}>
                         <div className="webimage">
+                            <img src={AboutImage} alt="" srcset="" />
                         </div>
                     </Col>
                 </Row>

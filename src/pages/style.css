@@ -332,10 +332,9 @@
   transition: 5ms;
   color: #e8e8e8;
 }
-.webimage {
+.webimage img {
   max-width: 500px;
   height: 350px;
-  background-image: url(../Assets/Web-designer-1024x821.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
