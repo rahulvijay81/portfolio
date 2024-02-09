@@ -30,7 +30,6 @@ export const skillsData = [
     Angular
     Docker
     Photoshop
-    Illustrator
     Svelte    
     Azure
     Fastify
