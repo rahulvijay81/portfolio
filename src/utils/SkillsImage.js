@@ -1,4 +1,4 @@
-// import gcp from '../assets/svg/skills/gcp.svg'
+
 import html from '../assets/svg/skills/html.svg'
 import photoshop from '../assets/svg/skills/photoshop.svg'
 import illustrator from '../assets/svg/skills/illustrator.svg'
