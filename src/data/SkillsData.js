@@ -1,5 +1,5 @@
 export const skillsData = [
-    'HTML',
+    'html',
     'CSS',
     'Javascript',
     'React',
