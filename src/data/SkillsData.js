@@ -31,8 +31,7 @@ export const skillsData = [
     Docker
     Photoshop
     Illustrator
-    Svelte
-    GCP
+    Svelte    
     Azure
     Fastify
     Haxe
