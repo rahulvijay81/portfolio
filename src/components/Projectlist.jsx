@@ -29,7 +29,7 @@ function Projectlist() {
               <ProjectCard
                 imgPath={olximage}
                 isBlog={false}
-                title="Landing Page"
+                title="TA-ALLOCATION_SYSTEM"
                 description="Spearheaded a cutting-edge TA Allocation Project utilizing a technology stack encompassing JavaScript, MongoDB, algorithms, Node.js, and Express. This innovative system optimized the allocation of Teaching Assistants to courses, streamlining the assignment process by automating it."            
                 ghLink="https://github.com/rrhan32/TA_allocation"
               />

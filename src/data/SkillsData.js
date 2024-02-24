@@ -8,10 +8,14 @@ export const skillsData = [
     'ViteJS',
     'Git',
     'MaterialUI',
+    'MongoDB',
     'Bootstrap',
     'Tailwind',
     'MongoDB',
     'Node JS',
+    'Next JS',
+   
+    
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
@@ -23,7 +27,7 @@ export const skillsData = [
     CSS
     JS 
     React
-    Next JS
+    
     Nuxt JS
     Node JS
     Vue
@@ -66,14 +70,11 @@ export const skillsData = [
     Dart
     Typescript
     Swift
-    Git
+    
     Figma
     Canva
     Ubuntu
-    Bootstrap
-    MongoDB
-    Tailwind
-    ViteJS
+   
     VuetifyJS
     MySQL
     PostgreSQL
