@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../Assets/logor.png"
+import logo from "../Assets/images/logor.png"
 import "../pages/style.css";
 
 

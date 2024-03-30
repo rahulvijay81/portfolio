@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Marquee from "react-fast-marquee";
 import { skillsData } from '../data/SkillsData';
 import { skillsImage } from '../utils/SkillsImage';
-import AboutImage from "../Assets/AboutImage.png"
+import AboutImage from "../Assets/images/AboutImage.png"
 
 import "../pages/style.css";
 

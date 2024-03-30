@@ -6,7 +6,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import imagedeveloper from "../Assets/imagedeveloper.png"
+import imagedeveloper from "../Assets/images/imagedeveloper.png"
 import "../pages/style.css";
 
 
