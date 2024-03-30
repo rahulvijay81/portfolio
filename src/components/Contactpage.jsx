@@ -2,6 +2,8 @@ import { Container } from "react-bootstrap";
 import "../pages/style.css";
 
 function Contactpage() {
+  const currentyaer = new Date().getFullYear()
+
   return (
     <div className="contactbackground">
       <Container>
@@ -19,9 +21,8 @@ function Contactpage() {
         </button>
         <span></span>
         <p className="copyright">
-          © Copyright 2023
           <hr />
-          Designed & Built by <span onClick={() => {
+          © Copyright <b>{currentyaer}</b> Designed & Built by <span onClick={() => {
             window.open("https://www.instagram.com/rahulvijay81/");
           }}>rahulvijay</span>
         </p>

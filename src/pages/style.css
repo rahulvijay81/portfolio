@@ -221,6 +221,9 @@
   background-size: cover;
   background-position: center;
 }
+.button_group{
+  display: flex;
+}
 .socailmediabtn {
   margin-top: 2rem;
   width: 90px;
@@ -267,6 +270,8 @@
   }
   .socailmediabtn {
     margin-top: 1rem;
+    width: 80px;
+    height: 50px;
   }
 }
 
@@ -455,7 +460,8 @@
   letter-spacing: 1px;
 }
 .contactpara {
-  width: 60%;
+  text-align: center;
+  width: 50%;
   margin: 0 auto;
   font-size: 1rem;
   letter-spacing: 1px;

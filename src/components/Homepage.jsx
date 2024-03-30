@@ -19,22 +19,24 @@ function Home() {
             <h2 className='nametext'>Im Rahul Vijay</h2>
             <span></span>
             <Text />
-            <button onClick={() => {
-              window.open("https://github.com/rahulvijay81");
-            }}
-              className='socailmediabtn'><AiFillGithub className='icon' /></button>
-            <button onClick={() => {
-              window.open("https://www.linkedin.com/in/rahulvijay81/");
-            }}
-              className='socailmediabtn'><FaLinkedinIn className='icon' /></button>
-            <button onClick={() => {
-              window.open("https://twitter.com/rahulvijay8156");
-            }}
-              className='socailmediabtn'><AiOutlineTwitter className='icon' /></button>
-            <button onClick={() => {
-              window.open("https://instagram.com/rahulvijay81");
-            }}
-              className='socailmediabtn'><AiFillInstagram className='icon' /></button>
+            <div className="button_group">
+              <button onClick={() => {
+                window.open("https://github.com/rahulvijay81");
+              }}
+                className='socailmediabtn'><AiFillGithub className='icon' /></button>
+              <button onClick={() => {
+                window.open("https://www.linkedin.com/in/rahulvijay81/");
+              }}
+                className='socailmediabtn'><FaLinkedinIn className='icon' /></button>
+              <button onClick={() => {
+                window.open("https://twitter.com/rahulvijay8156");
+              }}
+                className='socailmediabtn'><AiOutlineTwitter className='icon' /></button>
+              <button onClick={() => {
+                window.open("https://instagram.com/rahulvijay81");
+              }}
+                className='socailmediabtn'><AiFillInstagram className='icon' /></button>
+            </div>
           </Col>
 
           <Col md={5}>
