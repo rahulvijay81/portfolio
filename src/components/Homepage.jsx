@@ -6,6 +6,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import imagedeveloper from "../Assets/imagedeveloper.png"
 import "../pages/style.css";
 
 
@@ -41,6 +42,7 @@ function Home() {
 
           <Col md={5}>
             <div className="imagedeveloper">
+              <img src={imagedeveloper} alt="" />
             </div>
           </Col>
         </Row>

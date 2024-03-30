@@ -9,6 +9,7 @@ function Text() {
         strings: [
           "React Js Developer",
           "UI Developer",
+          "Javascript Developer",
           "Front End Developer",
         ],
         autoStart: true,

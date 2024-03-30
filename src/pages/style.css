@@ -69,8 +69,7 @@
   transform: rotate(-135deg) !important;
   opacity: 0.9 !important;
 }
-.logo {
-  background-image: url(../assets/logor.png);
+.logo img{
   background-repeat: no-repeat;
   background-size: cover;
   width: 90px;
@@ -78,7 +77,7 @@
 }
 
 .nav-link {
-  color: white !important;
+  /* color: white !important; */
   font-size: 1rem !important;
   letter-spacing: 1px;
   font-weight: 500 !important;
@@ -212,11 +211,10 @@
   font-weight: 600 !important;
   letter-spacing: 1px !important;
 }
-.imagedeveloper {
+.imagedeveloper  img{
   margin-top: 50px;
   max-width: 550px;
   height: 400px;
-  background-image: url(../assets/Web-designer-1024x821.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -337,10 +335,9 @@
   transition: 5ms;
   color: #e8e8e8;
 }
-.webimage {
+.webimage img {
   max-width: 500px;
   height: 350px;
-  background-image: url(../assets/web-removebg-preview.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

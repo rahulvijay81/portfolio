@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../Assets/logor.png"
 import "../pages/style.css";
 
 
@@ -28,7 +29,9 @@ function Header() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Navbar.Brand className="logotext" as={Link} to="/">
-        <div className="logo"></div>
+        <div className="logo">
+          <img src={logo} alt="" />
+        </div>
       </Navbar.Brand>
 
       <Navbar.Toggle
@@ -47,6 +50,11 @@ function Header() {
           <Nav.Item>
             <NavLink
               className="nav-link"
+              style={({isActive})=>(
+                {
+                  color: isActive ? 'black':'white',
+                }
+              )}
               to="/"
               onClick={() => updateExpanded(false)}
             >
@@ -56,6 +64,11 @@ function Header() {
           <Nav.Item>
             <NavLink
               className="nav-link"
+              style={({isActive})=>(
+                {
+                  color: isActive ? 'black':'white',
+                }
+              )}
               to="/about"
               onClick={() => updateExpanded(false)}
             >
@@ -76,6 +89,11 @@ function Header() {
           <Nav.Item>
             <NavLink
               className="nav-link"
+              style={({isActive})=>(
+                {
+                  color: isActive ? 'black':'white',
+                }
+              )}
               to="/contact"
               onClick={() => updateExpanded(false)}
             >

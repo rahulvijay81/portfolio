@@ -1,18 +1,18 @@
 export const skillsData = [
-    'HTML',
-    'CSS',
-    'Javascript',
-    'React',
-    'Next JS',
-    'ViteJS',
-    'Git',
-    'MaterialUI',
-    'Bootstrap',
-    'Tailwind',
-    'Figma',
-    'Firebase',
-    'Photoshop',
-]
+  "html",
+  "CSS",
+  "Javascript",
+  "React",
+  "Next JS",
+  "ViteJS",
+  "Git",
+  "MaterialUI",
+  "Bootstrap",
+  "Tailwind",
+  "Figma",
+  "Firebase",
+  "Photoshop",
+];
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
 
@@ -30,9 +30,7 @@ export const skillsData = [
     Angular
     Docker
     Photoshop
-    Illustrator
-    Svelte
-    GCP
+    Svelte    
     Azure
     Fastify
     Haxe
