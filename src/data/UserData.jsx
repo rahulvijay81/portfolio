@@ -1,5 +1,6 @@
 export const UserData = {
   name: "Rahul Vijay",
+  about : "I m a self-taught Front End developer from India. I build websites with a focus on providing the experience for everyone using them and responsiveness. Curious to learn more about developing scalable distribution systems, love problem solving, and care about writing and maintainable code. A responsive design makes your website accessible to all users, regardless of their devices.",
   FooterLink : "https://www.linkedin.com/in/rahulvijay81/",
   socialMedia: [
     {

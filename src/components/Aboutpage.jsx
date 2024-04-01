@@ -38,7 +38,7 @@ function Aboutpage() {
                     </Col>
                     <Col md={5}>
                         <div className="webimage">
-                            <img src={AboutImage} alt="" srcset="" />
+                            <img src={AboutImage} alt="" />
                         </div>
                     </Col>
                 </Row>
