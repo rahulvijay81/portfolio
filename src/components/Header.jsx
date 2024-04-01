@@ -1,120 +1,52 @@
-import { useState } from "react";
-import { Button } from "react-bootstrap";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import { Link, NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
 import logo from "../Assets/images/logor.png"
-import "../pages/style.css";
 
 
-function Header() {
-  const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
+const Header = () => {
+const [isScrolling , setisScrolling] = useState(false);
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
-  }
+useEffect(() => {
+  const handleScroll = () => {
+    const scrollTop = window.scrollY
+    const isCurrentScrolled =  scrollTop > 0 ;
+    setisScrolling(isCurrentScrolled)
+  };
 
-  window.addEventListener("scroll", scrollHandler);
+  window.addEventListener('scroll', handleScroll);
+
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+},[]);
 
   return (
-    <Navbar
-      expanded={expand}
-      fixed="top"
-      expand="md"
-      className={navColour ? "sticky" : "navbar"}
-    >
-      <Navbar.Brand className="logotext" as={Link} to="/">
-        <div className="logo">
-          <img src={logo} alt="" />
-        </div>
-      </Navbar.Brand>
-
-      <Navbar.Toggle
-        className="navbar-toggler"
-        aria-controls="responsive-navbar-nav"
-        onClick={() => {
-          updateExpanded(expand ? false : "expanded");
-        }}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </Navbar.Toggle>
-      <Navbar.Collapse id="responsive-navbar-nav" className="responsive-navbar">
-        <Nav className="ms-auto" defaultActiveKey="#home">
-          <Nav.Item>
-            <NavLink
-              className="nav-link"
-              style={({isActive})=>(
-                {
-                  color: isActive ? 'black':'white',
-                }
-              )}
-              to="/"
-              onClick={() => updateExpanded(false)}
-            >
-              Home
-            </NavLink>
-          </Nav.Item>
-          <Nav.Item>
-            <NavLink
-              className="nav-link"
-              style={({isActive})=>(
-                {
-                  color: isActive ? 'black':'white',
-                }
-              )}
-              to="/about"
-              onClick={() => updateExpanded(false)}
-            >
-              About
-            </NavLink>
-          </Nav.Item>
-
-          {/* <Nav.Item>
-            <NavLink
-              className="nav-link"
-              to="/project"
-              onClick={() => updateExpanded(false)}
-            >
-              Projects
-            </NavLink>
-          </Nav.Item> */}
-
-          <Nav.Item>
-            <NavLink
-              className="nav-link"
-              style={({isActive})=>(
-                {
-                  color: isActive ? 'black':'white',
-                }
-              )}
-              to="/contact"
-              onClick={() => updateExpanded(false)}
-            >
-              Contact
-            </NavLink>
-          </Nav.Item>
-
-          <Button
-            onClick={() => {
-              window.open(
-                "https://drive.google.com/file/d/1LSVLVmJA_3fhWtZPc_d_pHnkXhL4s-Oc/view?usp=drive_link"
-              );
-            }}
-            className="resumebtn"
-          >
-            <span>Resume</span>
-          </Button>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <header className={`flex items-center justify-between w-full px-28 pt-2 fixed top-0 z-50 transition-all text-base ${isScrolling ? 'sticky' : ''}`}>
+      <div>
+       <img className="w-[90px] h-[80px] bg-no-repeat bg-cover" src={logo} alt="" />
+      </div>
+      <nav>
+        <ul className="flex space-x-4">
+          <li>
+            <a href="/" className="text-white hover:text-gray-300">Home</a>
+          </li>
+          <li>
+            <a href="/about" className="text-white hover:text-gray-300">About</a>
+          </li>
+          <li>
+            <a href="/contact" className="text-white hover:text-gray-300">Projects</a>
+          </li>
+          <li>
+            <a href="/contact" className="text-white hover:text-gray-300">Contact</a>
+          </li>
+          <li>
+            <button className="w-[120px bg-blue-900 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+              Resume
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
-}
+};
 
 export default Header;

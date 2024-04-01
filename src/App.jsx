@@ -5,7 +5,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 // import Project from './pages/Project';
 import Contact from './pages/Contact';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Cursor from '../src/components/Cursor';
 import Layout from './pages/Layout';
