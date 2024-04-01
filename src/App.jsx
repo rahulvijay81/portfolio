@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App text-emerald-700">
       <Cursor />
       <Router>
         <Preloader load={load} />
