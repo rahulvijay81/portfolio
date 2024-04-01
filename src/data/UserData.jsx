@@ -1,5 +1,6 @@
 export const UserData = {
   name: "Rahul Vijay",
+  FooterLink : "https://www.linkedin.com/in/rahulvijay81/",
   socialMedia: [
     {
       socialMediaName: "github",
