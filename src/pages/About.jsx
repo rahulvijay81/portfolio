@@ -18,7 +18,7 @@ function About() {
           <div className="mt-8">
             <Marquee
               gradient={false}
-              speed={100}
+              speed={150}
               pauseOnClick={true}
               delay={0}
               play={true}
