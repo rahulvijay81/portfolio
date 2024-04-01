@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /* Header style */
 
@@ -69,8 +69,7 @@
   transform: rotate(-135deg) !important;
   opacity: 0.9 !important;
 }
-.logo {
-  background-image: url(../assets/logor.png);
+.logo img {
   background-repeat: no-repeat;
   background-size: cover;
   width: 90px;
@@ -84,7 +83,7 @@
   font-weight: 500 !important;
   padding-right: 2rem !important;
   padding-left: 1rem !important;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 .nav-link:hover {
@@ -212,14 +211,16 @@
   font-weight: 600 !important;
   letter-spacing: 1px !important;
 }
-.imagedeveloper {
+.imagedeveloper img {
   margin-top: 50px;
   max-width: 550px;
   height: 400px;
-  background-image: url(../assets/Web-designer-1024x821.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.button_group {
+  display: flex;
 }
 .socailmediabtn {
   margin-top: 2rem;
@@ -260,13 +261,18 @@
   .nametext {
     font-size: 2.4em !important;
   }
-  .imagedeveloper {
-    margin-top: 50px;
-    max-width: 420px;
-    max-height: 400px;
+  .imagedeveloper img {
+    margin-top: 1rem;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .socailmediabtn {
     margin-top: 1rem;
+    width: 80px;
+    height: 50px;
   }
 }
 
@@ -316,26 +322,25 @@
 }
 .aboutdetails {
   font-size: 1.1rem !important;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 .skilllist li {
   letter-spacing: 1px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 .skilllist {
   font-weight: 600;
   list-style-type: none;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 .skilllist li:hover {
   transform: scale(1.05);
   transition: 5ms;
   color: #e8e8e8;
 }
-.webimage {
+.webimage img {
   max-width: 500px;
   height: 350px;
-  background-image: url(../assets/web-removebg-preview.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -344,6 +349,13 @@
   .aboutpagebackground {
     width: 100%;
     height: 100%;
+  }
+  .webimage img {
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .textbackground {
     display: block !important;
@@ -375,8 +387,8 @@
   padding-right: 25px !important;
   height: auto !important;
 }
-.card-text{
-  font-family: 'Poppins';
+.card-text {
+  font-family: "Poppins";
 }
 .project-card-view {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
@@ -407,7 +419,7 @@
   justify-content: center !important;
   font-size: 18px !important;
   letter-spacing: 1px;
-  font-family: 'Poppins' !important;
+  font-family: "Poppins" !important;
 }
 
 .btn-primary {
@@ -425,7 +437,6 @@
   outline: none !important;
   box-shadow: none !important;
 }
-
 
 @media (max-width: 767px) {
   .project-section {
@@ -455,12 +466,13 @@
   letter-spacing: 1px;
 }
 .contactpara {
-  width: 60%;
+  text-align: center;
+  width: 50%;
   margin: 0 auto;
   font-size: 1rem;
   letter-spacing: 1px;
   padding-bottom: 1.5rem;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 .contactbtn {
   display: block;
@@ -471,7 +483,7 @@
   border: solid 2px;
   background-color: transparent;
   letter-spacing: 1px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 .contactbtn:hover {
   background-color: rgba(51, 51, 51, 0.2);
@@ -483,7 +495,7 @@
   right: 0;
   text-align: center;
   font-size: 12px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 .copyright span {
   font-weight: 700;
@@ -493,13 +505,22 @@
   .contactpara br {
     display: none;
   }
+  .contactpara {
+    text-align: justify;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding-bottom: 1.5rem;
+    font-family: "Poppins";
+  }
 }
 
 /* skils style  */
-.skillsContainer{
+.skillsContainer {
   margin-top: 2rem;
 }
-.skill--box{
+.skill--box {
   width: 100px;
   height: 100px;
   display: flex;
@@ -509,7 +530,7 @@
   gap: 10px;
   margin-left: 1rem;
 }
-.skill-image{
+.skill-image {
   width: 60px;
   height: 50px;
   background-repeat: no-repeat;
