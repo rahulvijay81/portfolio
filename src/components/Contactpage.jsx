@@ -21,7 +21,7 @@ function Contactpage() {
         </button>
         <span></span>
         <p className="copyright">
-          <hr />
+          <br />
           © Copyright <b>{currentYear}</b> Designed & Built by <span onClick={() => {
             window.open("https://www.instagram.com/rahulvijay81/");
           }}>rahulvijay</span>
