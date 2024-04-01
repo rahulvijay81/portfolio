@@ -1,12 +1,8 @@
-import Header from '../components/Header'
-import Homepage from '../components/Homepage'
+import React from 'react'
 
 function Home() {
   return (
-    <>
-      <Header />
-      <Homepage />
-    </>
+    <div className='w-full h-screen'>Home</div>
   )
 }
 

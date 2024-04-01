@@ -4,7 +4,6 @@ import Projectlist from '../components/Projectlist'
 function Project() {
   return (
     <>
-      <Header />
       <Projectlist />
     </>
   )

@@ -5,7 +5,6 @@ import Aboutpage from '../components/Aboutpage'
 function About() {
   return (
     <>
-      <Header />
       <Aboutpage />
     </>
   )

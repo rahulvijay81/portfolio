@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Cursor from '../src/components/Cursor';
+import Layout from './pages/Layout';
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -21,13 +22,13 @@ function App() {
   }, []);
 
   return (
-    <div className="App text-emerald-700">
-      <Cursor />
+    <div className="App">
+      {/* <Cursor /> */}
       <Router>
         <Preloader load={load} />
         <div className="App" id={load ? 'no-scroll' : 'scroll'}>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Layout />} />
             <Route path="/about" element={<About />} />
             {/* <Route path="/project" element={<Project />} /> */}
             <Route path="/contact" element={<Contact />} />
