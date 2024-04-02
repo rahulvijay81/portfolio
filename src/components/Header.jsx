@@ -46,7 +46,7 @@ const Header = () => {
             <p className="text-white hover:text-gray-900">Contact</p>
           </div>
           <div>
-            <button className="w-[120px] button-UI text-gray-900 hover:text-white font-bold py-1.5 px-4 rounded-lg tracking-wider">
+            <button className="w-[120px] button-UI text-gray-900 hover:text-white font-bold py-1.5 px-4 rounded-lg tracking-wider shadow-xl">
               Resume
             </button>
           </div>

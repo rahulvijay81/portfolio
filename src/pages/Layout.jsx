@@ -4,6 +4,7 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Footer from '../components/Footer';
+import Project from './Project';
 
 function Layout() {
   return (
@@ -11,6 +12,7 @@ function Layout() {
       <Header />
       <Home/>
       <About/>
+      <Project/>
       <Contact/>
       <Footer />
     </>

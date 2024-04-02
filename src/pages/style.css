@@ -144,16 +144,7 @@
 }
 
 
-.Typewriter__wrapper {
-  font-size: 2em !important;
-  color: #191919 !important;
-  font-weight: 600 !important;
-  letter-spacing: 1px !important;
-}
-.Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: #191919 !important;
-}
+
 .headtext {
   padding-top: 120px;
   font-size: 2.4em !important;

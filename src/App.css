@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 body {
   font-family: "Raleway", serif !important;
@@ -71,7 +69,11 @@ html {
   background: rgba(0, 0, 0, 0.911);
   border-radius: 12px;
 }
-.font-poppins{
+
+.icon {
+  font-size: 30px;
+}
+.font-poppins {
   font-family: "Poppins";
 }
 .sticky {
@@ -79,7 +81,7 @@ html {
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
-.button-UI{
+.button-UI {
   background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 100%);
 }
 .wave {
@@ -117,9 +119,19 @@ html {
   }
 }
 
-
 /* @media (max-width: 767px) {
   .cursor{
     display: none;
   }
 } */
+
+.Typewriter__wrapper {
+  font-size: 2em !important;
+  color: #191919 !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+}
+.Typewriter__cursor {
+  font-size: 2.4em !important;
+  color: #191919 !important;
+}
