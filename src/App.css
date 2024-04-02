@@ -79,6 +79,9 @@ html {
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
+.button-UI{
+  background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 100%);
+}
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 2.1s; /* Change to speed up or slow down */
