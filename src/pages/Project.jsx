@@ -5,11 +5,11 @@ function Project() {
   return (
     <div className="w-full h-screen">
       <div>
-        <p className="w-[50%] mx-auto text-3xl font-poppins text-gray-900 pb-6 tracking-wider text-center font-poppins">
+        <p className="w-[50%] pb-10 mx-auto text-3xl font-poppins text-gray-900 pt-8 tracking-wider text-center font-poppins">
           Projects
         </p>
       </div>
-      <div className="w-[90%] mx-auto grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="w-[90%] mx-auto mb-8 grid grid-cols-1 gap-8 md:grid-cols-2">
         <Cards />
       </div>
       <div className="w-[90%] mx-auto">
