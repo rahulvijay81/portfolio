@@ -119,11 +119,6 @@ html {
   }
 }
 
-/* @media (max-width: 767px) {
-  .cursor{
-    display: none;
-  }
-} */
 
 .Typewriter__wrapper {
   font-size: 2em !important;
@@ -134,4 +129,19 @@ html {
 .Typewriter__cursor {
   font-size: 2.4em !important;
   color: #191919 !important;
+}
+@media (max-width: 767px) {
+  /* .cursor{
+    display: none;
+  } */
+  .Typewriter__wrapper {
+    font-size: 1.6em !important;
+    color: #191919 !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px !important;
+  }
+  .Typewriter__cursor {
+    font-size: 1.4em !important;
+    color: #191919 !important;
+  }
 }
