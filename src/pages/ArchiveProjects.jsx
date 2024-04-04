@@ -1,12 +1,26 @@
 import React from "react";
 import { ProjectsList } from "../data/ProjectsList";
+import { FaArrowLeft } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 function ArchiveProjects() {
+  const navigate = useNavigate();
   const AllProjects = ProjectsList.projects;
   return (
     <div className="w-full h-auto ">
-      <div className="text-2xl text-center pb-8 pt-2 font-poppins">
-        The project I work on
+      <div
+        onClick={() => {
+          navigate(-1);
+        }}
+        className="hidden lg:flex lg:items-center ml-[5%] pt-8 gap-2 cursor-pointer"
+      >
+        <FaArrowLeft />
+        Portfolio
+      </div>
+      <div className="flex pb-8 lg:p-4 pt-2 w-[90%] items-center justify-center mx-auto lg:pt-4">
+        <div className="text-center text-2xl  font-poppins">
+          The project I work on
+        </div>
       </div>
       <div className="w-[90%] mx-auto mb-2 sm:mb-8 grid grid-cols-1 gap-4 md:grid-cols-2">
         {AllProjects.map((project) => (

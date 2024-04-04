@@ -1,7 +1,9 @@
 import Cards from "../components/Cards";
 import { FaLocationArrow } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function Project() {
+  const navigate = useNavigate();
   return (
     <div className="w-full h-auto mb-24 sm:mb-0 md:h-screen">
       <div>
@@ -14,7 +16,12 @@ function Project() {
       </div>
       <div className="w-[90%] mx-auto">
         <p className="flex items-center gap-2 text-gray-900 leading-tight font-semibold cursor-pointer">
-          <div class="relative group font-poppins">
+          <div
+            class="relative group font-poppins"
+            onClick={() => {
+              navigate("/projectlist");
+            }}
+          >
             <span>View Full Project Archive</span>
             <span class="absolute left-0 bottom-0 top-6 w-full h-[2px] bg-gray-900 opacity-0 group-hover:opacity-100 transition-opacity"></span>
           </div>
