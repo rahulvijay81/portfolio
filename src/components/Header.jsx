@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import logo from "../Assets/images/logor.png";
 import { Link, Events, scrollSpy } from "react-scroll";
+import { CgMenuRight } from "react-icons/cg";
+import logo from "../Assets/images/logor.png";
 
 const Header = () => {
   const [isScrolling, setisScrolling] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // State for mobile menu visibility
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false); 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +34,7 @@ const Header = () => {
 
   return (
     <header
-      className={`flex lg:items-center justify-between w-full lg:px-28 lg:pt-2 fixed top-0 z-50 transition-all text-base sm:px-4
+      className={`flex items-center justify-between w-full lg:px-28 lg:pt-2 fixed top-0 z-50 transition-all text-base sm:px-4
       ${isScrolling ? "sticky" : ""}`}
     >
       <div>
@@ -126,26 +127,16 @@ const Header = () => {
       </nav>
       <div className="lg:hidden block"> {/* Show on small screens */}
         <button
-          className="block text-white hover:text-gray-900 focus:outline-none"
+          className="block mr-5 hover:text-gray-900 focus:outline-none"
           onClick={toggleMobileMenu}
         >
-          {/* Hamburger icon */}
-          <svg
-            className="w-6 h-6 fill-current"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-            />
-          </svg>
+          <CgMenuRight  size={32}/>
         </button>
       </div>
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <nav className="lg:hidden block absolute top-full left-0 w-full bg-white">
-          <div className="flex flex-col items-center space-y-4 py-4">
+        <nav className="lg:hidden block absolute top-full left-0 w-full">
+          <div className={`flex flex-col items-center space-y-4 py-4 navbar-bg`}>
             <Link
               activeClass="active"
               spy={true}
