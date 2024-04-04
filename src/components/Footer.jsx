@@ -11,7 +11,7 @@ function Footer() {
         © Copyright <b>{currentYear}</b> Designed & Built by
       </div>
       <div
-        className="font-bold tracking-wider cursor-pointer"
+        className="font-bold tracking-wider cursor-pointer text-sm"
         onClick={() => {
           window.open(FooterLink);
         }}

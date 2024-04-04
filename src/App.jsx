@@ -8,6 +8,8 @@ import Contact from './pages/Contact';
 import './App.css';
 import Cursor from '../src/components/Cursor';
 import Layout from './pages/Layout';
+import ArchiveProjects from './pages/ArchiveProjects';
+import NotFound from './pages/NotFound';
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -29,8 +31,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Layout />} />
             <Route path="/about" element={<About />} />
-            {/* <Route path="/project" element={<Project />} /> */}
+            <Route path="/projectlist" element={<ArchiveProjects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/*" element={<NotFound />} />
           </Routes>
         </div>
       </Router>
