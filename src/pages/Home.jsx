@@ -49,7 +49,7 @@ function Home() {
 
         <div className="mt-12">
           <img
-            className="max-w[550px] lg:h-[400px] bg-no-repeat bg-cover bg-center"
+            className="max-w[550px] lg:w-[600px] lg:h-[400px] bg-no-repeat bg-cover bg-center"
             src={imagedeveloper}
             alt=""
           />

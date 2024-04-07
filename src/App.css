@@ -22,7 +22,6 @@ html {
 }
 * {
   margin: 0;
-  /* cursor: none; */
 }
 #no-scroll {
   overflow: hidden;
@@ -140,9 +139,9 @@ html {
   color: #191919 !important;
 }
 @media (max-width: 767px) {
-  /* .cursor{
+  .cursor{
     display: none;
-  } */
+  }
   .Typewriter__wrapper {
     font-size: 1.6em !important;
     color: #191919 !important;

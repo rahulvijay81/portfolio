@@ -12,7 +12,7 @@ function ArchiveProjects() {
         onClick={() => {
           navigate(-1);
         }}
-        className="hidden lg:flex lg:items-center ml-[5%] pt-8 gap-2 cursor-pointer"
+        className="hidden lg:flex lg:items-center ml-[5%] pt-8 gap-2 hover:text-white cursor-pointer"
       >
         <FaArrowLeft />
         Portfolio

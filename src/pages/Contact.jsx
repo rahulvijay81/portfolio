@@ -1,7 +1,7 @@
 
 function Contact() {
   return (
-    <div className="w-full mb-32 md:h-screen flex items-center justify-center">
+    <div className="w-full mb-40 lg:mb-4 md:h-screen flex items-center justify-center">
       <div className="flex items-center justify-center flex-col ">
         <h2 className="pt-12 text-center text-3xl lg:text-5xl text-gray-900 tracking-wider pb-6">
           Get In Touch
