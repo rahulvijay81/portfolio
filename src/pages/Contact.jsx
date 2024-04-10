@@ -1,5 +1,7 @@
+import { UserData } from "../data/UserData";
 
 function Contact() {
+  const { FooterLink } = UserData;
   return (
     <div className="w-full mb-40 lg:mb-4 md:h-screen flex items-center justify-center">
       <div className="flex items-center justify-center flex-col ">
@@ -12,7 +14,9 @@ function Contact() {
           chat, please don't hesitate to reach out. My inbox is open 24/7!
         </p>
 
-        <button className="w-[200px] h-[50px] bg-transparent border-2 border-black hover:bg-gray-900 hover:bg-opacity-40">Connect Now 🚀</button>
+        <button  onClick={() => {
+          window.open(FooterLink);
+        }} className="w-[200px] h-[50px] bg-transparent border-2 border-black hover:bg-gray-900 hover:bg-opacity-40">Connect Now 🚀</button>
       </div>
     </div>
   );
