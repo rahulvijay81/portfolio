@@ -1,16 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #c850c0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
 }
 html {
   scroll-behavior: smooth;
 }
 * {
   margin: 0;
-  cursor: none;
 }
 #no-scroll {
   overflow: hidden;
@@ -58,10 +69,87 @@ html {
   border-radius: 12px;
 }
 
+.icon {
+  font-size: 30px;
+}
+.font-poppins {
+  font-family: "Poppins";
+}
+.sticky {
+  transition: all 0.3s ease-out 0s !important;
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  backdrop-filter: blur(15px) !important;
+}
+.navbar-bg{
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 0%,
+    #ffcc70 100%
+  );
+}
+.button-UI {
+  background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 100%);
+}
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 
+.Typewriter__wrapper {
+  font-size: 2em !important;
+  color: #191919 !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+}
+.Typewriter__cursor {
+  font-size: 2.4em !important;
+  color: #191919 !important;
+}
 @media (max-width: 767px) {
   .cursor{
     display: none;
+  }
+  .Typewriter__wrapper {
+    font-size: 1.6em !important;
+    color: #191919 !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px !important;
+  }
+  .Typewriter__cursor {
+    font-size: 1.4em !important;
+    color: #191919 !important;
   }
 }

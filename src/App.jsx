@@ -1,13 +1,28 @@
-import { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Preloader from '../src/components/Pre';
-import Home from './pages/Home';
-import About from './pages/About';
-// import Project from './pages/Project';
-import Contact from './pages/Contact';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import Cursor from '../src/components/Cursor';
+import { useEffect, useState } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import Preloader from "../src/components/Pre";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Cursor from "../src/components/Cursor";
+import Layout from "./pages/Layout";
+import ArchiveProjects from "./pages/ArchiveProjects";
+import NotFound from "./pages/NotFound";
+import "./App.css";
+
+function ScrollToTopOnRouteChange() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -21,16 +36,18 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Cursor />
+    <div className="App ">
+      {/* <Cursor /> */}
       <Router>
         <Preloader load={load} />
-        <div className="App" id={load ? 'no-scroll' : 'scroll'}>
+        <div className="App" id={load ? "no-scroll" : "scroll"}>
+          <ScrollToTopOnRouteChange />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Layout />} />
             <Route path="/about" element={<About />} />
-            {/* <Route path="/project" element={<Project />} /> */}
+            <Route path="/projectlist" element={<ArchiveProjects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/*" element={<NotFound />} />
           </Routes>
         </div>
       </Router>

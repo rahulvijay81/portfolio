@@ -1,120 +1,245 @@
-import { useState } from "react";
-import { Button } from "react-bootstrap";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import { Link, NavLink } from "react-router-dom";
-import logo from "../Assets/images/logor.png"
-import "../pages/style.css";
+import { useEffect, useState } from "react";
+import { Link, Events, scrollSpy } from "react-scroll";
+import { CgMenuRight } from "react-icons/cg";
+import { UserData } from "../data/UserData";
+import logo from "../Assets/images/logor.png";
 
+const Header = () => {
+  const [isScrolling, setisScrolling] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-function Header() {
-  const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
+  const { resumeUrl } = UserData;
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
-  }
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const isCurrentScrolled = scrollTop > 0;
+      setisScrolling(isCurrentScrolled);
+    };
 
-  window.addEventListener("scroll", scrollHandler);
+    window.addEventListener("scroll", handleScroll);
+    Events.scrollEvent.register("begin", function (to) {
+      setActiveSection(to);
+    });
+
+    scrollSpy.update();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      Events.scrollEvent.remove("begin");
+    };
+  }, []);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
 
   return (
-    <Navbar
-      expanded={expand}
-      fixed="top"
-      expand="md"
-      className={navColour ? "sticky" : "navbar"}
+    <header
+      className={`flex items-center justify-between w-full lg:px-28 lg:pt-2 fixed top-0 z-50 transition-all text-base sm:px-4
+      ${isScrolling ? "sticky" : ""}`}
     >
-      <Navbar.Brand className="logotext" as={Link} to="/">
-        <div className="logo">
-          <img src={logo} alt="" />
-        </div>
-      </Navbar.Brand>
-
-      <Navbar.Toggle
-        className="navbar-toggler"
-        aria-controls="responsive-navbar-nav"
-        onClick={() => {
-          updateExpanded(expand ? false : "expanded");
-        }}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </Navbar.Toggle>
-      <Navbar.Collapse id="responsive-navbar-nav" className="responsive-navbar">
-        <Nav className="ms-auto" defaultActiveKey="#home">
-          <Nav.Item>
-            <NavLink
-              className="nav-link"
-              style={({isActive})=>(
-                {
-                  color: isActive ? 'black':'white',
-                }
-              )}
-              to="/"
-              onClick={() => updateExpanded(false)}
+      <div className="cursor-none">
+        <img
+          className="w-[90px] h-[80px] bg-no-repeat bg-cover"
+          src={logo}
+          alt="logo"
+        />
+      </div>
+      <nav className="lg:block hidden">
+        <div className="lg:flex lg:flex-row items-center space-x-4 lg:gap-6 sm:gap-4 sm:flex sm:flex-col cursor-pointer">
+          <Link
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-250}
+            duration={500}
+            to="Home-section"
+          >
+            <p
+              className={
+                activeSection === "Home-section"
+                  ? "active"
+                  : "text-white hover:text-gray-900"
+              }
             >
               Home
-            </NavLink>
-          </Nav.Item>
-          <Nav.Item>
-            <NavLink
-              className="nav-link"
-              style={({isActive})=>(
-                {
-                  color: isActive ? 'black':'white',
-                }
-              )}
-              to="/about"
-              onClick={() => updateExpanded(false)}
+            </p>
+          </Link>
+          <Link
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-150}
+            duration={500}
+            to="About-section"
+          >
+            <p
+              className={
+                activeSection === "About-section"
+                  ? "active"
+                  : "text-white hover:text-gray-900"
+              }
             >
               About
-            </NavLink>
-          </Nav.Item>
-
-          {/* <Nav.Item>
-            <NavLink
-              className="nav-link"
-              to="/project"
-              onClick={() => updateExpanded(false)}
+            </p>
+          </Link>
+          <Link
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-150}
+            duration={500}
+            to="Project-section"
+          >
+            <p
+              className={
+                activeSection === "Project-section"
+                  ? "active"
+                  : "text-white hover:text-gray-900"
+              }
             >
               Projects
-            </NavLink>
-          </Nav.Item> */}
-
-          <Nav.Item>
-            <NavLink
-              className="nav-link"
-              style={({isActive})=>(
-                {
-                  color: isActive ? 'black':'white',
-                }
-              )}
-              to="/contact"
-              onClick={() => updateExpanded(false)}
+            </p>
+          </Link>
+          <Link
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            to="Contact-section"
+          >
+            <p
+              className={
+                activeSection === "Contact-section"
+                  ? "active"
+                  : "text-white hover:text-gray-900"
+              }
             >
               Contact
-            </NavLink>
-          </Nav.Item>
-
-          <Button
-            onClick={() => {
-              window.open(
-                "https://drive.google.com/file/d/1LSVLVmJA_3fhWtZPc_d_pHnkXhL4s-Oc/view?usp=drive_link"
-              );
-            }}
-            className="resumebtn"
+            </p>
+          </Link>
+          <div>
+            <button
+              onClick={() => {
+                window.open(resumeUrl);
+              }}
+              className="w-[120px] button-UI text-gray-900 hover:text-white font-bold py-1.5 px-4 rounded-lg tracking-wider shadow-xl"
+            >
+              Resume
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div className="lg:hidden block">
+        {" "}
+        {/* Show on small screens */}
+        <button
+          className="block mr-5 hover:text-gray-900 focus:outline-none"
+          onClick={toggleMobileMenu}
+        >
+          <CgMenuRight size={32} />
+        </button>
+      </div>
+      {/* Mobile menu */}
+      {mobileMenuOpen && (
+        <nav className="lg:hidden block absolute top-full left-0 w-full">
+          <div
+            className={`flex flex-col items-center space-y-4 py-4 navbar-bg`}
           >
-            <span>Resume</span>
-          </Button>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+            <Link
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-250}
+              duration={500}
+              to="Home-section"
+            >
+              <p
+                className={
+                  activeSection === "Home-section"
+                    ? "active"
+                    : "text-black hover:text-gray-900"
+                }
+                onClick={toggleMobileMenu}
+              >
+                Home
+              </p>
+            </Link>
+            <Link
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={500}
+              to="About-section"
+            >
+              <p
+                className={
+                  activeSection === "About-section"
+                    ? "active"
+                    : "text-black hover:text-gray-900"
+                }
+                onClick={toggleMobileMenu}
+              >
+                About
+              </p>
+            </Link>
+            <Link
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={500}
+              to="Project-section"
+            >
+              <p
+                className={
+                  activeSection === "Project-section"
+                    ? "active"
+                    : "text-black hover:text-gray-900"
+                }
+                onClick={toggleMobileMenu}
+              >
+                Projects
+              </p>
+            </Link>
+            <Link
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              to="Contact-section"
+            >
+              <p
+                className={
+                  activeSection === "Contact-section"
+                    ? "active"
+                    : "text-black hover:text-gray-900"
+                }
+                onClick={toggleMobileMenu}
+              >
+                Contact
+              </p>
+            </Link>
+            <div>
+              <button
+                onClick={() => {
+                  window.open(resumeUrl);
+                }}
+                className="w-[120px] button-UI text-gray-900 hover:text-white font-bold py-1.5 px-4 rounded-lg tracking-wider shadow-xl"
+              >
+                Resume
+              </button>
+            </div>
+          </div>
+        </nav>
+      )}
+    </header>
   );
-}
+};
 
 export default Header;

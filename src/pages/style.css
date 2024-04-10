@@ -11,11 +11,7 @@
   padding: 0.5rem 3rem !important;
   font-size: 1rem !important;
 }
-.sticky {
-  transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
-  backdrop-filter: blur(15px) !important;
-}
+
 .navbar-toggler {
   position: relative !important;
   background-color: transparent !important;
@@ -142,62 +138,13 @@
 .homepagebackground {
   width: 100%;
   min-height: 100vh;
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
 }
 .row {
   padding-top: 80px;
 }
 
-.wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
-  display: inline-block;
-}
 
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  } /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
-  }
-}
-.Typewriter__wrapper {
-  font-size: 2em !important;
-  color: #191919 !important;
-  font-weight: 600 !important;
-  letter-spacing: 1px !important;
-}
-.Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: #191919 !important;
-}
+
 .headtext {
   padding-top: 120px;
   font-size: 2.4em !important;
@@ -276,105 +223,12 @@
   }
 }
 
-/* Aboutpage style */
-
-.aboutpagebackground {
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
-  padding-top: 110px;
-}
-.textbackground {
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  background-color: transparent;
-  border-radius: 10px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px !important;
-}
-.aboutmetext {
-  font-size: 2.1em !important;
-  color: #191919 !important;
-  font-weight: 600 !important;
-  letter-spacing: 1px !important;
-}
-.aboutmetext span:hover {
-  display: inline-block;
-  transition: all 500ms;
-  color: #fff;
-  animation: vibrate 30ms linear infinite forwards;
-}
-@keyframes vibrate {
-  0% {
-    transform: translateX(-1px) translateY(1px);
-  }
-  100% {
-    transform: translateX(1px) translateY(-2px);
-  }
-}
-.aboutdetails {
-  font-size: 1.1rem !important;
-  font-family: "Poppins";
-}
-.skilllist li {
-  letter-spacing: 1px;
-  font-family: "Poppins";
-}
-.skilllist {
-  font-weight: 600;
-  list-style-type: none;
-  font-family: "Poppins";
-}
-.skilllist li:hover {
-  transform: scale(1.05);
-  transition: 5ms;
-  color: #e8e8e8;
-}
-.webimage img {
-  max-width: 500px;
-  height: 350px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-@media (max-width: 767px) {
-  .aboutpagebackground {
-    width: 100%;
-    height: 100%;
-  }
-  .webimage img {
-    width: 100%;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  .textbackground {
-    display: block !important;
-    margin: 0 auto !important;
-  }
-}
 
 /* Projectpage style */
 
 .projectbackground {
   width: 100%;
   height: 100%;
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
 }
 .project-section {
   position: relative !important;
@@ -449,13 +303,6 @@
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
   padding-top: 110px;
 }
 .contacthead {
@@ -516,23 +363,3 @@
   }
 }
 
-/* skils style  */
-.skillsContainer {
-  margin-top: 2rem;
-}
-.skill--box {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-  margin-left: 1rem;
-}
-.skill-image {
-  width: 60px;
-  height: 50px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
