@@ -14,7 +14,7 @@ function About() {
           <p className="text-2xl font-semibold text-gray-900 tracking-wide pb-2">
             About Me
           </p>
-          <p className="text-sm md:text-lg font-poppins">{about}</p>
+          <p className="text-sm lg:text-base font-poppins">{about}</p>
           <div className="mt-8">
             <Marquee
               gradient={false}
@@ -42,7 +42,7 @@ function About() {
         </div>
 
         <img
-          className="max-w[500px] lg:h-[350px] bg-no-repeat bg-cover bg-center mt-4 lg:mt-0"
+          className="max-w[500px] md:w-[350px] lg:w-[550px] lg:h-[350px] bg-no-repeat bg-cover bg-center mt-4 lg:mt-0"
           src={AboutImage}
           alt=""
         />

@@ -12,10 +12,17 @@ function ArchiveProjects() {
         onClick={() => {
           navigate(-1);
         }}
-        className="hidden lg:flex lg:items-center ml-[5%] pt-8 gap-2 hover:text-white cursor-pointer"
+        className="hidden lg:flex lg:items-center ml-[5%] pt-8 gap-2 hover:text-white "
       >
         <FaArrowLeft />
-        Portfolio
+        <span
+          className="cursor-pointer"
+          onClick={() => {
+            navigate(-1);
+          }}
+        >
+          Portfolio
+        </span>
       </div>
       <div className="flex pb-8 lg:p-4 pt-2 w-[90%] items-center justify-center mx-auto lg:pt-4">
         <div className="text-center text-2xl  font-poppins">
@@ -23,9 +30,9 @@ function ArchiveProjects() {
         </div>
       </div>
       <div className="w-[90%] mx-auto mb-2 sm:mb-8 grid grid-cols-1 gap-4 md:grid-cols-2">
-        {AllProjects.map((project) => (
+        {AllProjects.map((project, index) => (
           <div
-            key={project.id}
+            key={index}
             className="rounded-lg bg-transparent mb-8 p-4 h-auto shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
           >
             <h2 className="text-base lg:text-xl font-semibold mb-2 font-poppins cursor-pointer">
