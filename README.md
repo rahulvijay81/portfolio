@@ -44,7 +44,7 @@ For more information about deploying a React application, refer to the [deployme
 
 The website will be available at `http://localhost:5173` in your web browser.
 
-## featured 
+## Featured 
 
 https://reactjsexample.com/24-best-free-open-source-react-portfolio-page-templates/
 
