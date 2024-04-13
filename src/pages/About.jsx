@@ -3,7 +3,7 @@ import { UserData } from "../data/UserData";
 import Marquee from "react-fast-marquee";
 import { skillsData } from "../data/SkillsData";
 import { skillsImage } from "../utils/SkillsImage";
-import AboutImage from "../Assets/images/AboutImage.png";
+import AboutImage from "../assets/images/AboutImage.png";
 
 function About() {
   const { about } = UserData;

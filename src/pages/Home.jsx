@@ -7,7 +7,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import imagedeveloper from "../Assets/images/imagedeveloper.png";
+import imagedeveloper from "../assets/images/imagedeveloper.png";
 
 function Home() {
   const socialMedia = UserData.socialMedia;
