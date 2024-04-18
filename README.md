@@ -2,7 +2,7 @@
 
 ![Rahul-Portfolio](https://user-images.githubusercontent.com/118264222/224553983-d0782a0a-7fb0-479e-a491-c7124b286d03.png)
 
-![Rahul-Vijay](https://github.com/rahulvijay81/portfolio/assets/118264222/a01b51ac-3908-4f70-9a02-5fdaecf570fc)
+![Rahul-Vijay](https://github.com/rahulvijay81/portfolio/Assets/118264222/a01b51ac-3908-4f70-9a02-5fdaecf570fc)
 
 This is my personal portfolio website built with React.js and Bootstrap, showcasing my skills and projects. The website is designed and created entirely by me, Rahul Vijay.
 
