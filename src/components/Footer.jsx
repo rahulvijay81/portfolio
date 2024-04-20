@@ -6,12 +6,12 @@ function Footer() {
   const { FooterLink } = UserData;
 
   return (
-    <div className="flex items-center justify-center gap-2 mb-2">
-      <div className="text-center text-xs font-poppins">
+    <div className="mb-2 flex items-center justify-center gap-2">
+      <div className="font-poppins text-center text-xs">
         © Copyright <b>{currentYear}</b> Designed & Built by
       </div>
       <div
-        className="font-bold tracking-wider cursor-pointer text-sm"
+        className="cursor-pointer text-sm font-bold tracking-wider"
         onClick={() => {
           window.open(FooterLink);
         }}

@@ -8,13 +8,13 @@ import AboutImage from "../Assets/images/AboutImage.png";
 function About() {
   const { about } = UserData;
   return (
-    <div className="w-full h-auto mb-24 sm:mb-0 md:h-screen">
-      <div className="flex md:items-center flex-col justify-between bg-transparent rounded-lg shadow-lg p-4 w-[90%] mx-auto md:flex-row">
-        <div className="flex flex-col w-full md:w-[50%]">
-          <p className="text-2xl font-semibold text-gray-900 tracking-wide pb-2">
+    <div className="mb-24 h-auto w-full sm:mb-0 md:h-screen">
+      <div className="mx-auto flex w-[90%] flex-col justify-between rounded-lg bg-transparent p-4 shadow-lg md:flex-row md:items-center">
+        <div className="flex w-full flex-col md:w-[50%]">
+          <p className="pb-2 text-2xl font-semibold tracking-wide text-gray-900">
             About Me
           </p>
-          <p className="text-sm lg:text-base font-poppins">{about}</p>
+          <p className="font-poppins text-sm lg:text-base">{about}</p>
           <div className="mt-8">
             <Marquee
               gradient={false}
@@ -26,11 +26,11 @@ function About() {
             >
               {skillsData.map((skill, id) => (
                 <div
-                  className="w-24 h-24 flex items-center justify-center flex-col gap-2 ml-4"
+                  className="ml-4 flex h-24 w-24 flex-col items-center justify-center gap-2"
                   key={id}
                 >
                   <img
-                    className="w-[60px] h-[50px] bg-no-repeat bg-contain"
+                    className="h-[50px] w-[60px] bg-contain bg-no-repeat"
                     src={skillsImage(skill)}
                     alt={skill}
                   />
@@ -42,7 +42,7 @@ function About() {
         </div>
 
         <img
-          className="max-w[500px] md:w-[350px] lg:w-[550px] lg:h-[350px] bg-no-repeat bg-cover bg-center mt-4 lg:mt-0"
+          className="max-w[500px] mt-4 bg-cover bg-center bg-no-repeat md:w-[350px] lg:mt-0 lg:h-[350px] lg:w-[550px]"
           src={AboutImage}
           alt=""
         />

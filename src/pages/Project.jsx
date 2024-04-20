@@ -5,25 +5,25 @@ import { useNavigate } from "react-router-dom";
 function Project() {
   const navigate = useNavigate();
   return (
-    <div className="w-full h-auto mb-24 sm:mb-0 md:h-screen">
+    <div className="mb-24 h-auto w-full sm:mb-0 md:h-screen">
       <div>
-        <p className="w-[50%] pb-10 mx-auto text-2xl lg:text-3xl font-poppins text-gray-900 pt-8 tracking-wider text-center font-poppins">
+        <p className="font-poppins font-poppins mx-auto w-[50%] pb-10 pt-8 text-center text-2xl tracking-wider text-gray-900 lg:text-3xl">
           Projects
         </p>
       </div>
-      <div className="w-[90%] mx-auto mb-2 sm:mb-8 grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="mx-auto mb-2 grid w-[90%] grid-cols-1 gap-8 sm:mb-8 md:grid-cols-2">
         <Cards />
       </div>
-      <div className="w-[90%] mx-auto">
-        <p className="flex items-center gap-2 text-gray-900 leading-tight font-semibold cursor-pointer">
+      <div className="mx-auto w-[90%]">
+        <p className="flex cursor-pointer items-center gap-2 font-semibold leading-tight text-gray-900">
           <div
-            class="relative group font-poppins"
+            class="font-poppins group relative"
             onClick={() => {
               navigate("/projectlist");
             }}
           >
             <span>View Full Project Archive</span>
-            <span class="absolute left-0 bottom-0 top-6 w-full h-[2px] bg-gray-900 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+            <span class="absolute bottom-0 left-0 top-6 h-[2px] w-full bg-gray-900 opacity-0 transition-opacity group-hover:opacity-100"></span>
           </div>
 
           <FaLocationArrow />

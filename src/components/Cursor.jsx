@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const Cursor = () => {
   const [mousePositions, setMousePositions] = useState([]);
@@ -20,40 +20,41 @@ const Cursor = () => {
       });
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
 
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
   const cursorStyles = {
-    position: 'fixed',
-    width: '16px',
-    height: '16px',
-    borderRadius: '50%',
-    backgroundColor: 'rgba(25, 25, 25, 0.5)',
-    pointerEvents: 'none',
+    position: "fixed",
+    width: "16px",
+    height: "16px",
+    borderRadius: "50%",
+    backgroundColor: "rgba(25, 25, 25, 0.5)",
+    pointerEvents: "none",
     zIndex: 9999,
   };
 
   const duplicateCursorStyles = {
     ...cursorStyles,
     transform: `scale(${isMoving ? 2.0 : 1})`,
-    transition: 'transform 0.05s ease',
-    animation: `${isMoving ? 'pulse 0.5s infinite' : ''}`,
+    transition: "transform 0.05s ease",
+    animation: `${isMoving ? "pulse 0.5s infinite" : ""}`,
   };
 
   return (
     <>
       {mousePositions.map((position, index) => (
         <div
-          className='cursor'
+          className="cursor"
           key={index}
           style={{
             ...duplicateCursorStyles,
-            transform: `translate(${position.x - 16}px, ${position.y - 16}px) scale(${1 + 0.02 * (mousePositions.length - index)
-              })`,
+            transform: `translate(${position.x - 16}px, ${position.y - 16}px) scale(${
+              1 + 0.02 * (mousePositions.length - index)
+            })`,
             opacity: 1 - 0.1 * (mousePositions.length - index),
           }}
         />
@@ -63,4 +64,3 @@ const Cursor = () => {
 };
 
 export default Cursor;
-

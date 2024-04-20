@@ -3,20 +3,25 @@ import { UserData } from "../data/UserData";
 function Contact() {
   const { FooterLink } = UserData;
   return (
-    <div className="w-full mb-40 lg:mb-4 md:h-screen flex items-center justify-center">
-      <div className="flex items-center justify-center flex-col ">
-        <h2 className="pt-12 text-center text-3xl lg:text-5xl text-gray-900 tracking-wider pb-6">
+    <div className="mb-40 flex w-full items-center justify-center md:h-screen lg:mb-4">
+      <div className="flex flex-col items-center justify-center ">
+        <h2 className="pb-6 pt-12 text-center text-3xl tracking-wider text-gray-900 lg:text-5xl">
           Get In Touch
         </h2>
-        <p className="lg:w-[50%] px-2 mx-auto text-sm text-gray-900 pb-6 tracking-wider text-center font-poppins">
+        <p className="font-poppins mx-auto px-2 pb-6 text-center text-sm tracking-wider text-gray-900 lg:w-[50%]">
           I'd love to connect and explore exciting opportunities with you!
           Whether you have interesting projects, creative ideas, or just want to
           chat, please don't hesitate to reach out. My inbox is open 24/7!
         </p>
 
-        <button  onClick={() => {
-          window.open(FooterLink);
-        }} className="w-[200px] h-[50px] bg-transparent border-2 border-black hover:bg-gray-900 hover:bg-opacity-40">Connect Now 🚀</button>
+        <button
+          onClick={() => {
+            window.open(FooterLink);
+          }}
+          className="h-[50px] w-[200px] border-2 border-black bg-transparent hover:bg-gray-900 hover:bg-opacity-40"
+        >
+          Connect Now 🚀
+        </button>
       </div>
     </div>
   );

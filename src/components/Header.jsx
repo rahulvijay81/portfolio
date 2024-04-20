@@ -37,18 +37,18 @@ const Header = () => {
 
   return (
     <header
-      className={`flex items-center justify-between w-full lg:px-28 lg:pt-2 fixed top-0 z-50 transition-all text-base sm:px-4
+      className={`fixed top-0 z-50 flex w-full items-center justify-between text-base transition-all sm:px-4 lg:px-28 lg:pt-2
       ${isScrolling ? "sticky" : ""}`}
     >
       <div className="cursor-none">
         <img
-          className="w-[90px] h-[80px] bg-no-repeat bg-cover"
+          className="h-[80px] w-[90px] bg-cover bg-no-repeat"
           src={logo}
           alt="logo"
         />
       </div>
-      <nav className="lg:block hidden">
-        <div className="lg:flex lg:flex-row items-center space-x-4 lg:gap-6 sm:gap-4 sm:flex sm:flex-col cursor-pointer">
+      <nav className="hidden lg:block">
+        <div className="cursor-pointer items-center space-x-4 sm:flex sm:flex-col sm:gap-4 lg:flex lg:flex-row lg:gap-6">
           <Link
             activeClass="active"
             spy={true}
@@ -126,18 +126,18 @@ const Header = () => {
               onClick={() => {
                 window.open(resumeUrl);
               }}
-              className="w-[120px] button-UI text-gray-900 hover:text-white font-bold py-1.5 px-4 rounded-lg tracking-wider shadow-xl"
+              className="button-UI w-[120px] rounded-lg px-4 py-1.5 font-bold tracking-wider text-gray-900 shadow-xl hover:text-white"
             >
               Resume
             </button>
           </div>
         </div>
       </nav>
-      <div className="lg:hidden block">
+      <div className="block lg:hidden">
         {" "}
         {/* Show on small screens */}
         <button
-          className="block mr-5 hover:text-gray-900 focus:outline-none"
+          className="mr-5 block hover:text-gray-900 focus:outline-none"
           onClick={toggleMobileMenu}
         >
           <CgMenuRight size={32} />
@@ -145,9 +145,9 @@ const Header = () => {
       </div>
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <nav className="lg:hidden block absolute top-full left-0 w-full">
+        <nav className="absolute left-0 top-full block w-full lg:hidden">
           <div
-            className={`flex flex-col items-center space-y-4 py-4 navbar-bg`}
+            className={`navbar-bg flex flex-col items-center space-y-4 py-4`}
           >
             <Link
               activeClass="active"
@@ -230,7 +230,7 @@ const Header = () => {
                 onClick={() => {
                   window.open(resumeUrl);
                 }}
-                className="w-[120px] button-UI text-gray-900 hover:text-white font-bold py-1.5 px-4 rounded-lg tracking-wider shadow-xl"
+                className="button-UI w-[120px] rounded-lg px-4 py-1.5 font-bold tracking-wider text-gray-900 shadow-xl hover:text-white"
               >
                 Resume
               </button>
