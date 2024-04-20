@@ -21,7 +21,7 @@ function Home() {
 
   return (
     <div className="mb-28 h-auto w-full sm:mb-0 md:h-screen">
-      <div className="mx-auto mt-32 flex w-[90%] flex-col items-center sm:flex-row lg:w-[80%] lg:justify-between  ">
+      <div className="mx-auto mt-40 flex w-[90%] flex-col items-center sm:flex-row lg:mt-32 lg:w-[80%] lg:justify-between  ">
         <div className="w-full">
           <h2 className="text-2xl font-semibold leading-tight text-gray-900 lg:text-3xl">
             Hello <span className="wave">👋</span>
@@ -47,7 +47,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="mt-12">
+        <div className="mt-20 lg:mt-12">
           <img
             className="max-w[550px] bg-cover bg-center bg-no-repeat lg:h-[400px] lg:w-[600px]"
             src={imagedeveloper}

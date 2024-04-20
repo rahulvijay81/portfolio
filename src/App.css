@@ -49,24 +49,30 @@ html {
 /* --------- */
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 3px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #c05ab9cb;
+  background-color: #c850c0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(174, 64, 224, 0.65);
-  border-radius: 12px;
+  background-color: #c850c0;
+  border-radius: 8px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.911);
-  border-radius: 12px;
+  border-radius: 3px;
 }
 
 .icon {
