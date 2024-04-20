@@ -4,7 +4,7 @@
 
 ![Rahul-Vijay](https://github.com/rahulvijay81/portfolio/Assets/118264222/a01b51ac-3908-4f70-9a02-5fdaecf570fc)
 
-This is my personal portfolio website built with React.js and Bootstrap, showcasing my skills and projects. The website is designed and created entirely by me, Rahul Vijay.
+This is my personal portfolio website built with React.js and Tailwindcss, showcasing my skills and projects. The website is designed and created entirely by me, Rahul Vijay.
 
 ## Features
 
