@@ -15,19 +15,23 @@ function Project() {
         <Cards />
       </div>
       <div className="mx-auto w-[90%]">
-        <p className="flex cursor-pointer items-center gap-2 font-semibold leading-tight text-gray-900">
-          <div
-            class="font-poppins group relative"
+        {/* Replace the <p> with a <div> or <span> to avoid inline-block issues */}
+        <div className="flex cursor-pointer items-center gap-2 font-semibold leading-tight text-gray-900">
+          {/* Remove <div> and use <span> to comply with inline elements rule */}
+          <span
+            className="font-poppins group relative"
             onClick={() => {
               navigate("/projectlist");
             }}
           >
             <span>View Full Project Archive</span>
-            <span class="absolute bottom-0 left-0 top-6 h-[2px] w-full bg-gray-900 opacity-0 transition-opacity group-hover:opacity-100"></span>
-          </div>
+            {/* Use className instead of class */}
+            <span className="absolute bottom-0 left-0 top-6 h-[2px] w-full bg-gray-900 opacity-0 transition-opacity group-hover:opacity-100"></span>
+          </span>
 
+          {/* Keep the icon outside the text block */}
           <FaLocationArrow />
-        </p>
+        </div>
       </div>
     </div>
   );
