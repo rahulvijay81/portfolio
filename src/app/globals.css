@@ -17,10 +17,17 @@ html {
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #011001;
+  color: #94a3b8;
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   overflow-x: hidden;
+  line-height: 1.625;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #5eead4;
+  color: #134e4a;
 }
 
 .spotlight-effect {
@@ -45,3 +52,12 @@ body {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.2);
 }
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
