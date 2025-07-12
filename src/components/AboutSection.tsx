@@ -1,11 +1,14 @@
 import AboutData from '../data/about.json';
+import type { AboutData as AboutDataType } from '../types';
+
+const aboutData: AboutDataType = AboutData;
 
 export default function AboutSection() {
   return (
-    <section id="about" className="min-h-screen flex items-center p-8">
+    <section id="about" className="h-auto lg:min-h-screen flex items-center p-4 md:p-6 lg:p-8">
       <div>
-        {AboutData.paragraphs.map((paragraph, index) => (
-          <p key={index} className={`text-base text-gray-300 leading-relaxed ${index < AboutData.paragraphs.length - 1 ? 'mb-4' : ''}`}>
+        {aboutData.paragraphs.map((paragraph, index) => (
+          <p key={index} className={`text-xs md:text-base text-gray-300 leading-relaxed ${index < aboutData.paragraphs.length - 1 ? 'mb-4' : ''}`}>
             {paragraph}
           </p>
         ))}

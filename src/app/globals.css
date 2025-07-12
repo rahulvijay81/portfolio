@@ -77,3 +77,42 @@ body {
   opacity: 0;
 }
 
+/* Mobile optimizations */
+@media (max-width: 1024px) {
+  .spotlight-effect {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .spotlight-effect:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(8px);
+  }
+  
+  .min-h-screen {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 11px;
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.08);
+  }
+}
+

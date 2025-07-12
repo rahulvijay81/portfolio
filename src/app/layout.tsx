@@ -12,9 +12,55 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = 'https://rahulvijay.netlify.app';
+
 export const metadata: Metadata = {
-  title: "Portfolio | Your Name",
-  description: "Personal portfolio showcasing my projects and skills",
+  title: {
+    default: "Rahul - Full Stack Developer Portfolio",
+    template: "%s | Rahul - Full Stack Developer"
+  },
+  description: "Full Stack Developer specializing in React, Next.js, Node.js. Frontend Developer at StratAgile with 2+ years experience building scalable web applications.",
+  keywords: ["Full Stack Developer", "React Developer", "Next.js", "Node.js", "Frontend Developer", "JavaScript", "TypeScript", "Portfolio"],
+  authors: [{ name: "Rahul" }],
+  creator: "Rahul",
+  publisher: "Rahul",
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: siteUrl,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    title: "Rahul - Full Stack Developer Portfolio",
+    description: "Full Stack Developer specializing in React, Next.js, Node.js. Frontend Developer at StratAgile with 2+ years experience.",
+    siteName: "Rahul Portfolio",
+    images: [
+      {
+        url: "/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "Rahul - Full Stack Developer Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rahul - Full Stack Developer Portfolio",
+    description: "Full Stack Developer specializing in React, Next.js, Node.js. Frontend Developer at StratAgile with 2+ years experience.",
+    images: ["/og-image.svg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -22,8 +68,31 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rahul",
+    "jobTitle": "Full Stack Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "StratAgile"
+    },
+    "url": "https://rahulvijay.netlify.app",
+    "sameAs": [
+      "https://github.com/yourusername",
+      "https://linkedin.com/in/yourusername"
+    ],
+    "knowsAbout": ["React", "Next.js", "Node.js", "JavaScript", "TypeScript", "Full Stack Development"]
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900`}
       >

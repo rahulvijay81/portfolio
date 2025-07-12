@@ -22,7 +22,7 @@ export default function MouseSpotlight() {
 
   return (
     <div 
-      className="pointer-events-none fixed inset-0 z-10 transition duration-300"
+      className="pointer-events-none fixed inset-0 z-10 transition duration-300 hidden lg:block"
       style={{
         background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
       }}
