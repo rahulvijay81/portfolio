@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 
 export default function MouseSpotlight() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const rafRef = useRef<number>();
+  const rafRef = useRef<number | null>(null);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {

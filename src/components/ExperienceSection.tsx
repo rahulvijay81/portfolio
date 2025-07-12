@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Building, Briefcase } from 'lucide-react';
+import { Calendar, MapPin, Building } from 'lucide-react';
 import ExperienceData from '../data/experience.json';
 import type { ExperienceData as ExperienceDataType } from '../types';
 
