@@ -5,6 +5,7 @@ import AboutSection from './AboutSection';
 import ExperienceSection from './ExperienceSection';
 import ProjectsSection from './ProjectsSection';
 import ContactSection from './ContactSection';
+import Footer from './Footer';
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -61,6 +62,9 @@ export default function MainContent() {
         </motion.div>
         <motion.div variants={sectionVariants}>
           <ContactSection />
+        </motion.div>
+        <motion.div variants={sectionVariants}>
+          <Footer />
         </motion.div>
       </motion.div>
     </motion.div>

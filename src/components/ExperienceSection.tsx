@@ -13,7 +13,7 @@ export default function ExperienceSection() {
         {experienceData.experiences.map((exp, index) => (
           <div 
             key={index} 
-            className="glass-effect rounded-xl p-4 md:p-6 spotlight-effect group border bg-slate-800/50 border-teal-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-teal-500/20 animate-fade-in-up"
+            className="glass-effect rounded-lg p-4 md:p-6 hover:bg-white/5 transition-colors"
             style={{ animationDelay: `${index * 200}ms` }}
           >
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">

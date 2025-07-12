@@ -78,9 +78,9 @@ export default function Sidebar() {
         <div className="flex flex-col justify-between p-8 h-full">
           <div className="flex-1 flex flex-col justify-center">
             <h1 className="text-4xl font-bold mb-2">Rahul Vijay</h1>
-            <p className="text-lg text-gray-400 mb-6">Front End Developer</p>
+            <p className="text-lg text-gray-400 mb-6">Full Stack Developer</p>
             <p className="text-sm text-gray-500 mb-8 leading-relaxed">
-              Passionate about creating beautiful, functional web experiences with modern technologies.
+              Crafting innovative digital solutions that blend cutting-edge technology with exceptional user experiences.
             </p>
             
             <nav className="space-y-3">
@@ -116,7 +116,7 @@ export default function Sidebar() {
       <div className="lg:hidden py-8 p-3 md:p-4 pb-2 flex flex-col items-center">
         <div className="text-center mb-3">
           <h1 className="text-lg md:text-2xl font-bold mb-1">Rahul Vijay</h1>
-          <p className="text-xs md:text-base text-gray-400 mb-2">Front End Developer</p>
+          <p className="text-xs md:text-base text-gray-400 mb-2">Full Stack Developer</p>
         </div>
         
         <nav className="flex justify-center gap-2 mb-4">

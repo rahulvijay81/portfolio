@@ -9,7 +9,7 @@ export default function ContactSection() {
           I'd love to connect and explore exciting opportunities with you! Whether you have interesting projects, creative ideas, collaboration proposals, or just want to chat about technology and innovation, please don't hesitate to reach out. I'm always eager to discuss new challenges, share insights, and build meaningful professional relationships. My inbox is open 24/7, and I typically respond within a few hours!
         </p>
         <a
-          href="mailto:your.email@example.com"
+          href="mailto:rahulvijay8156@gmail.com"
           className="group inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:border-white/30 px-8 py-3 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
         >
           <Mail size={20} className="group-hover:rotate-12 transition-transform duration-300" />
