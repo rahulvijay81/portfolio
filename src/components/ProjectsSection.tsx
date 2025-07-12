@@ -1,8 +1,8 @@
 import { Tag } from 'lucide-react';
-import ProjectsList from '../data/projects.json';
 import type { ProjectsData } from '../types';
 
-const projectsData: ProjectsData = ProjectsList;
+// Import JSON data
+const projectsData: ProjectsData = require('../data/projects.json');
 
 export default function ProjectsSection() {
   return (
