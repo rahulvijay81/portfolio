@@ -14,6 +14,8 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #5eead4 rgba(255, 255, 255, 0.05);
 }
 
 body {
@@ -59,6 +61,39 @@ body {
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+/* Custom Scrollbar - Webkit */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #5eead4, #14b8a6);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #7dd3fc, #0ea5e9);
+  box-shadow: 0 0 8px rgba(94, 234, 212, 0.3);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #5eead4 rgba(255, 255, 255, 0.05);
+}
+
+/* Fallback for older browsers */
+body {
+  scrollbar-face-color: #5eead4;
+  scrollbar-track-color: rgba(255, 255, 255, 0.05);
 }
 
 @keyframes fade-in-up {
