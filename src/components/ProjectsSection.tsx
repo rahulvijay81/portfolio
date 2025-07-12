@@ -1,25 +1,25 @@
-import { ExternalLink, Code, Github } from 'lucide-react';
+import { Tag } from 'lucide-react';
+import ProjectsList from '../data/projects.json';
 
 export default function ProjectsSection() {
   return (
     <section id="projects" className="min-h-screen p-8">
-      <div className="space-y-8">
-        {[1, 2, 3].map((i) => (
-          <div key={i} className="glass-effect rounded-lg p-6">
-            <div className="h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center">
-              <Code size={32} className="text-white" />
+      <div className="space-y-6 max-w-4xl mx-auto">
+        {ProjectsList.projects.map((project, i) => (
+          <div key={i} className="glass-effect rounded-lg p-6 hover:bg-white/5 transition-colors">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold text-white mb-1">{project.name}</h3>
+              </div>
             </div>
-            <h3 className="text-xl font-semibold mb-2">Project {i}</h3>
-            <p className="text-gray-400 mb-4">Description of the project and technologies used.</p>
-            <div className="flex space-x-4">
-              <a href="#" className="flex items-center space-x-2 text-blue-400 hover:text-blue-300">
-                <ExternalLink size={16} />
-                <span>Live</span>
-              </a>
-              <a href="#" className="flex items-center space-x-2 text-gray-400 hover:text-white">
-                <Github size={16} />
-                <span>Code</span>
-              </a>
+            <p className="text-gray-300 mb-4 leading-relaxed text-sm">{project.description}</p>
+            <div className="flex flex-wrap gap-2">
+              {project.technologies.map((tech, techIndex) => (
+                <span key={techIndex} className="inline-flex items-center px-3 py-1 rounded-full text-xs bg-blue-500/20 text-blue-300 border border-blue-500/30">
+                  <Tag size={12} className="mr-1" />
+                  {tech}
+                </span>
+              ))}
             </div>
           </div>
         ))}

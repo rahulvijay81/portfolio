@@ -1,0 +1,22 @@
+{
+  "experiences": [
+    {
+      "title": "Frontend Developer",
+      "company": "StratAgile",
+      "type": "Full-time",
+      "duration": "Oct 2023 - Present",
+      "period": "1 yr 10 mos",
+      "location": "Kochi, Kerala, India",
+      "workType": "On-site"
+    },
+    {
+      "title": "React Js Developer",
+      "company": "Zymsi",
+      "type": "Full-time",
+      "duration": "Apr 2023 - Oct 2023",
+      "period": "7 mos",
+      "location": "Bengaluru, Karnataka, India",
+      "workType": "Remote"
+    }
+  ]
+}

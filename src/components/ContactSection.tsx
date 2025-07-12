@@ -4,15 +4,16 @@ export default function ContactSection() {
   return (
     <section id="contact" className="min-h-screen flex items-center p-8">
       <div>
-        <p className="text-lg text-gray-300 mb-8">
-          I'm always open to discussing new opportunities and interesting projects.
+        <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
+        <p className="text-base text-gray-300 mb-8 pr-[200px]">
+          I'd love to connect and explore exciting opportunities with you! Whether you have interesting projects, creative ideas, collaboration proposals, or just want to chat about technology and innovation, please don't hesitate to reach out. I'm always eager to discuss new challenges, share insights, and build meaningful professional relationships. My inbox is open 24/7, and I typically respond within a few hours!
         </p>
         <a
           href="mailto:your.email@example.com"
-          className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-semibold transition-colors"
+          className="group inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:border-white/30 px-8 py-3 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20"
         >
-          <Mail size={20} />
-          <span>Say Hello</span>
+          <Mail size={20} className="group-hover:rotate-12 transition-transform duration-300" />
+          <span>Connect Now 🚀</span>
         </a>
       </div>
     </section>

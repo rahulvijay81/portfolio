@@ -8,7 +8,7 @@ export default function Sidebar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'projects', 'contact'];
+      const sections = ['about', 'experience', 'projects', 'contact'];
       const scrollPosition = window.scrollY + window.innerHeight / 2;
       const documentHeight = document.documentElement.scrollHeight;
       const windowHeight = window.innerHeight;
@@ -69,6 +69,9 @@ export default function Sidebar() {
           <a href="#about" className={`block transition-colors ${
             activeSection === 'about' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
           }`}>About Me</a>
+          <a href="#experience" className={`block transition-colors ${
+            activeSection === 'experience' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
+          }`}>Experience</a>
           <a href="#projects" className={`block transition-colors ${
             activeSection === 'projects' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
           }`}>Projects</a>
