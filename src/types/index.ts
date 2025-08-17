@@ -20,6 +20,10 @@ export interface Project {
   name: string;
   description: string;
   technologies: string[];
+  links?: {
+    github?: string;
+    site?: string;
+  };
 }
 
 export interface ProjectsData {

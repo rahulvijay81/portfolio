@@ -1,4 +1,4 @@
-import { Tag } from 'lucide-react';
+import { Tag, Github, ExternalLink } from 'lucide-react';
 import type { ProjectsData } from '../types';
 
 // Import JSON data
@@ -15,6 +15,32 @@ export default function ProjectsSection() {
               <div className="flex-1">
                 <h3 className="text-base md:text-xl font-semibold text-white mb-1">{project.name}</h3>
               </div>
+              {project.links && (
+                <div className="flex gap-2 mt-2 md:mt-0">
+                  {project.links.github && (
+                    <a
+                      href={project.links.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-full bg-gray-800/50 hover:bg-gray-700/50 transition-colors"
+                      aria-label="View on GitHub"
+                    >
+                      <Github size={16} className="text-gray-300 hover:text-white" />
+                    </a>
+                  )}
+                  {project.links.site && (
+                    <a
+                      href={project.links.site}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-full bg-gray-800/50 hover:bg-gray-700/50 transition-colors"
+                      aria-label="View live site"
+                    >
+                      <ExternalLink size={16} className="text-gray-300 hover:text-white" />
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
             <p className="text-gray-300 mb-4 leading-relaxed text-xs md:text-sm">{project.description}</p>
             <div className="flex flex-wrap gap-2">

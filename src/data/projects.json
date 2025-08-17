@@ -1,6 +1,41 @@
 {
   "projects": [
     {
+      "name": "Web Insight Tool",
+      "description": "A comprehensive web analysis tool built with Next.js that provides detailed insights into website performance, SEO optimization, accessibility compliance, and security vulnerabilities. Features real-time auditing using Google Lighthouse API, generating actionable reports with performance metrics, best practice recommendations, and improvement suggestions to enhance overall web presence.",
+      "technologies": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Node.js",
+        "Express",
+        "Lighthouse API",
+        "Git",
+        "GitHub"
+      ],
+      "links": {
+        "site": "https://webinsighttool.com"
+      }
+    },
+    {
+      "name": "Personal Portfolio",
+      "description": "My portfolio is a website built with React.js and Tailwind CSS, utilizing React Router v6 to enable easy access to multiple pages. It was designed and created entirely by myself, showcasing my skills and projects. The website is responsive and visually appealing, providing a user-friendly experience.",
+      "technologies": ["React JS", "Tailwind CSS", "Git", "GitHub", "Figma"],
+      "links": {
+        "github": "https://github.com/rahulvijay81/portfolio",
+        "site": "https://rahulvijay.netlify.app/"
+      }
+    },
+    {
+      "name": "Grid Line Builders",
+      "description": "Grid line builders is a static webpage built with HTML, CSS, and JavaScript. Users can see images of their work and contact information that helps to connect the home builders through a webpage. webpage builds responsive to multiple sizes of devices.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "links": {
+        "github": "",
+        "site": "https://gridlinesbuilders.in/"
+      }
+    },
+    {
       "name": "StratAgile HRMS",
       "description": "Stratagile HRMS is a web-based Human Resource Management System built using React. It is designed to streamline HR processes and enhance organizational efficiency by providing a set of features for leave management, employee tracking, alumni management, branch office organization, holiday calendars, and working day schedules.",
       "technologies": [
@@ -11,7 +46,10 @@
         "Git",
         "GitHub",
         "Figma"
-      ]
+      ],
+      "links": {
+        "github": ""
+      }
     },
     {
       "name": "Zymsi - Gym Membership Platform",
@@ -25,22 +63,18 @@
         "Git",
         "GitHub",
         "Figma"
-      ]
-    },
-    {
-      "name": "Personal Portfolio",
-      "description": "My portfolio is a website built with React.js and Tailwind CSS, utilizing React Router v6 to enable easy access to multiple pages. It was designed and created entirely by myself, showcasing my skills and projects. The website is responsive and visually appealing, providing a user-friendly experience.",
-      "technologies": ["React JS", "Tailwind CSS", "Git", "GitHub", "Figma"]
+      ],
+      "links": {
+        "site": "https://zymsi.com"
+      }
     },
     {
       "name": "Dashboard Panel",
       "description": "User Admin Dashboard created with React js, Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid to build this entire application. This application consists of Light and Dark Mode, four different Charts, three different Data Table Pages, FAQ Page, Form Page, and Calendar Integration.",
-      "technologies": ["React JS", "Material UI"]
-    },
-    {
-      "name": "Grid Line Builders",
-      "description": "Grid line builders is a static webpage built with HTML, CSS, and JavaScript. Users can see images of their work and contact information that helps to connect the home builders through a webpage. webpage builds responsive to multiple sizes of devices.",
-      "technologies": ["HTML", "CSS", "JavaScript"]
+      "technologies": ["React JS", "Material UI"],
+      "links": {
+        "github": "https://github.com/rahulvijay81/admin-panel-Dashboard"
+      }
     }
   ]
 }

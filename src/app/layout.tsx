@@ -65,6 +65,38 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  other: {
+    'application/ld+json': JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rahul",
+        "jobTitle": "Full Stack Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "StratAgile"
+        },
+        "url": "https://rahulvijay.netlify.app",
+        "sameAs": [
+          "https://github.com/rahulvijay81",
+          "https://www.linkedin.com/in/rahulvijay81/"
+        ],
+        "knowsAbout": ["React", "Next.js", "Node.js", "JavaScript", "TypeScript", "Full Stack Development"]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Rahul Portfolio",
+        "url": "https://rahulvijay.netlify.app",
+        "description": "Full Stack Developer portfolio showcasing React, Next.js, and Node.js projects",
+        "author": {
+          "@type": "Person",
+          "name": "Rahul",
+          "jobTitle": "Full Stack Developer"
+        }
+      }
+    ])
+  },
 };
 
 export default function RootLayout({
@@ -72,31 +104,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Rahul",
-    "jobTitle": "Full Stack Developer",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "StratAgile"
-    },
-    "url": "https://rahulvijay.netlify.app",
-    "sameAs": [
-      "https://github.com/yourusername",
-      "https://linkedin.com/in/yourusername"
-    ],
-    "knowsAbout": ["React", "Next.js", "Node.js", "JavaScript", "TypeScript", "Full Stack Development"]
-  };
-
   return (
     <html lang="en">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900`}
       >
