@@ -21,10 +21,11 @@ export default function MouseSpotlight() {
   }, []);
 
   return (
-    <div 
-      className="pointer-events-none fixed inset-0 z-10 transition duration-300 hidden lg:block"
+    <div
+      className="pointer-events-none fixed inset-0 z-30 transition duration-300 hidden lg:block"
       style={{
-        background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`
+        background: `radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), rgba(30, 64, 175, 0.05) 40%, transparent 80%)`,
+        mixBlendMode: 'screen'
       }}
     />
   );
