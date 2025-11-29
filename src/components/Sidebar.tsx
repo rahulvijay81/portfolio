@@ -1,6 +1,6 @@
 'use client';
 
-import { Github, Linkedin, X, Instagram } from 'lucide-react';
+import { Github, Linkedin, X, Instagram, User, Briefcase, FolderOpen, Mail } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { smoothScrollTo } from '../lib/smooth-scroll';
 import SocialData from '../data/social.json';
@@ -32,7 +32,7 @@ export default function Sidebar() {
       if (documentHeight <= windowHeight) {
         let closestSection = 'about';
         let minDistance = Infinity;
-        
+
         for (const section of sections) {
           const element = document.getElementById(section);
           if (element) {
@@ -82,23 +82,19 @@ export default function Sidebar() {
             <p className="text-sm text-gray-500 mb-8 leading-relaxed">
               Crafting innovative digital solutions that blend cutting-edge technology with exceptional user experiences.
             </p>
-            
+
             <nav className="space-y-3">
-              <button onClick={() => smoothScrollTo('about')} className={`block transition-colors text-left ${
-                activeSection === 'about' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
-              }`}>About Me</button>
-              <button onClick={() => smoothScrollTo('experience')} className={`block transition-colors text-left ${
-                activeSection === 'experience' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
-              }`}>Experience</button>
-              <button onClick={() => smoothScrollTo('projects')} className={`block transition-colors text-left ${
-                activeSection === 'projects' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
-              }`}>Projects</button>
-              <button onClick={() => smoothScrollTo('contact')} className={`block transition-colors text-left ${
-                activeSection === 'contact' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
-              }`}>Contact Me</button>
+              <button onClick={() => smoothScrollTo('about')} className={`block transition-colors text-left ${activeSection === 'about' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
+                }`}>About Me</button>
+              <button onClick={() => smoothScrollTo('experience')} className={`block transition-colors text-left ${activeSection === 'experience' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
+                }`}>Experience</button>
+              <button onClick={() => smoothScrollTo('projects')} className={`block transition-colors text-left ${activeSection === 'projects' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
+                }`}>Projects</button>
+              <button onClick={() => smoothScrollTo('contact')} className={`block transition-colors text-left ${activeSection === 'contact' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
+                }`}>Contact Me</button>
             </nav>
           </div>
-          
+
           <div className="flex justify-center space-x-4">
             {socialData.socialMedia.map((social) => {
               const Icon = getIcon(social.socialMediaName);
@@ -113,37 +109,62 @@ export default function Sidebar() {
       </div>
 
       {/* Mobile/Tablet Header */}
-      <div className="lg:hidden py-8 p-3 md:p-4 pb-2 flex flex-col items-center">
-        <div className="text-center mb-3">
-          <h1 className="text-lg md:text-2xl font-bold mb-1">Rahul Vijay</h1>
-          <p className="text-xs md:text-base text-gray-400 mb-2">Full Stack Developer</p>
+      <div className="lg:hidden fixed top-0 left-0 right-0 z-50 glass-effect border-b border-white/10 px-6 py-4 flex justify-between items-center">
+        <div>
+          <h1 className="text-xl font-bold text-slate-100">Rahul Vijay</h1>
+          <p className="text-xs text-teal-400 font-medium tracking-wide">Full Stack Developer</p>
         </div>
-        
-        <nav className="flex justify-center gap-2 mb-4">
-          <button onClick={() => smoothScrollTo('about')} className={`px-2 py-1 rounded-lg text-xs md:text-sm transition-colors ${
-            activeSection === 'about' ? 'bg-white/15 text-white font-medium' : 'text-gray-400 hover:text-white'
-          }`}>About</button>
-          <button onClick={() => smoothScrollTo('experience')} className={`px-2 py-1 rounded-lg text-xs md:text-sm transition-colors ${
-            activeSection === 'experience' ? 'bg-white/15 text-white font-medium' : 'text-gray-400 hover:text-white'
-          }`}>Experience</button>
-          <button onClick={() => smoothScrollTo('projects')} className={`px-2 py-1 rounded-lg text-xs md:text-sm transition-colors ${
-            activeSection === 'projects' ? 'bg-white/15 text-white font-medium' : 'text-gray-400 hover:text-white'
-          }`}>Projects</button>
-          <button onClick={() => smoothScrollTo('contact')} className={`px-2 py-1 rounded-lg text-xs md:text-sm transition-colors ${
-            activeSection === 'contact' ? 'bg-white/15 text-white font-medium' : 'text-gray-400 hover:text-white'
-          }`}>Contact</button>
-        </nav>
-        
-        <div className="flex justify-center space-x-3 mb-2">
+        <div className="flex space-x-3">
           {socialData.socialMedia.map((social) => {
             const Icon = getIcon(social.socialMediaName);
             return (
-              <a key={social.socialMediaName} href={social.url} target="_blank" rel="noopener noreferrer" className="p-1.5 glass-effect rounded-full hover:scale-110 transition-transform">
-                <Icon size={16} />
+              <a key={social.socialMediaName} href={social.url} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-teal-300 transition-colors">
+                <Icon size={18} />
               </a>
             );
           })}
         </div>
+      </div>
+
+      {/* Mobile Bottom Navigation */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50 glass-effect border-t border-white/10 px-6 py-2 pb-safe">
+        <nav className="flex justify-between items-center">
+          <button
+            onClick={() => smoothScrollTo('about')}
+            className={`flex flex-col items-center p-2 transition-all duration-300 ${activeSection === 'about' ? 'text-teal-400 -translate-y-1' : 'text-slate-400 hover:text-slate-200'
+              }`}
+          >
+            <User size={20} className="mb-1" />
+            <span className="text-[10px] font-medium">About</span>
+          </button>
+
+          <button
+            onClick={() => smoothScrollTo('experience')}
+            className={`flex flex-col items-center p-2 transition-all duration-300 ${activeSection === 'experience' ? 'text-teal-400 -translate-y-1' : 'text-slate-400 hover:text-slate-200'
+              }`}
+          >
+            <Briefcase size={20} className="mb-1" />
+            <span className="text-[10px] font-medium">Experience</span>
+          </button>
+
+          <button
+            onClick={() => smoothScrollTo('projects')}
+            className={`flex flex-col items-center p-2 transition-all duration-300 ${activeSection === 'projects' ? 'text-teal-400 -translate-y-1' : 'text-slate-400 hover:text-slate-200'
+              }`}
+          >
+            <FolderOpen size={20} className="mb-1" />
+            <span className="text-[10px] font-medium">Work</span>
+          </button>
+
+          <button
+            onClick={() => smoothScrollTo('contact')}
+            className={`flex flex-col items-center p-2 transition-all duration-300 ${activeSection === 'contact' ? 'text-teal-400 -translate-y-1' : 'text-slate-400 hover:text-slate-200'
+              }`}
+          >
+            <Mail size={20} className="mb-1" />
+            <span className="text-[10px] font-medium">Contact</span>
+          </button>
+        </nav>
       </div>
     </>
   );

@@ -19,13 +19,13 @@ const containerVariants: Variants = {
 };
 
 const sectionVariants: Variants = {
-  hidden: { 
-    opacity: 0, 
+  hidden: {
+    opacity: 0,
     y: 60,
     scale: 0.95
   },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
     scale: 1,
     transition: {
@@ -37,12 +37,12 @@ const sectionVariants: Variants = {
 
 export default function MainContent() {
   return (
-    <motion.div 
-      className="w-full lg:w-3/5 lg:ml-auto h-full overflow-y-scroll scrollbar-hide px-2 md:px-4 lg:px-0"
+    <motion.div
+      className="w-full lg:w-3/5 lg:ml-auto h-full overflow-y-scroll scrollbar-hide px-2 md:px-4 lg:px-0 pb-24 lg:pb-0 pt-24 lg:pt-0"
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ 
-        duration: 0.8, 
+      transition={{
+        duration: 0.8,
         ease: "easeOut"
       }}
     >
