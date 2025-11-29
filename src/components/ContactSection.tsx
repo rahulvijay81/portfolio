@@ -2,7 +2,7 @@ import { Mail } from 'lucide-react';
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="min-h-screen flex items-center p-3 md:p-6 lg:p-8">
+    <section id="contact" className="min-h-screen flex items-center p-3 md:p-6 lg:p-8 scroll-mt-24 lg:scroll-mt-0">
       <div>
         <h2 className="text-lg md:text-3xl font-bold mb-4">Get In Touch</h2>
         <p className="text-xs md:text-base text-gray-300 mb-8 lg:pr-[200px]">

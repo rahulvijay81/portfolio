@@ -8,7 +8,7 @@ const experienceData: ExperienceDataType = ExperienceData;
 export default function ExperienceSection() {
 
   return (
-    <section id="experience" className="min-h-screen flex flex-col items-center justify-center p-3 md:p-6 lg:p-8">
+    <section id="experience" className="min-h-screen flex flex-col items-center justify-center p-3 md:p-6 lg:p-8 scroll-mt-24 lg:scroll-mt-0">
 
       <div className="w-full space-y-6">
         {experienceData.experiences.map((exp, index) => (
