@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     default: "Rahul - Full Stack Developer Portfolio",
     template: "%s | Rahul - Full Stack Developer"
   },
-  description: "Full Stack Developer specializing in React, Next.js, Node.js. Frontend Developer at StratAgile with 2+ years experience building scalable web applications.",
+  description: "Rahul Vijay - Full Stack Developer with 2+ years of experience at StratAgile. Expert in React.js, Next.js, Node.js, TypeScript, and MongoDB. Building scalable web applications and mobile solutions with modern JavaScript frameworks.",
   keywords: ["Full Stack Developer", "React Developer", "Next.js", "Node.js", "Frontend Developer", "JavaScript", "TypeScript", "Portfolio"],
   authors: [{ name: "Rahul" }],
   creator: "Rahul",
