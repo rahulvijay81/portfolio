@@ -19,18 +19,47 @@ const siteUrl = 'https://rahulvijay.netlify.app';
 
 export const metadata: Metadata = {
   title: {
-    default: "Rahul - Full Stack Developer Portfolio",
-    template: "%s | Rahul - Full Stack Developer"
+    default: "Rahul Vijay - Full Stack Developer | React, Next.js, Node.js Expert",
+    template: "%s | Rahul Vijay - Full Stack Developer"
   },
-  description: "Rahul Vijay - Full Stack Developer with 2+ years of experience at StratAgile. Expert in React.js, Next.js, Node.js, TypeScript, and MongoDB. Building scalable web applications and mobile solutions with modern JavaScript frameworks.",
-  keywords: ["Full Stack Developer", "React Developer", "Next.js", "Node.js", "Frontend Developer", "JavaScript", "TypeScript", "Portfolio"],
-  authors: [{ name: "Rahul" }],
-  creator: "Rahul",
-  publisher: "Rahul",
+  description: "Rahul Vijay - Self-taught Full Stack Developer specializing in React, Next.js, Node.js, Express.js, JavaScript, TypeScript, HTML5, CSS, Tailwind CSS, MongoDB, PostgreSQL, and MySQL. Building dynamic, scalable web applications with responsive UI and robust backend solutions. Expert in Git, RESTful APIs, authentication systems, and deployment on Vercel & Netlify.",
+  keywords: [
+    "Rahul Vijay",
+    "Full Stack Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Node.js Developer",
+    "JavaScript Developer",
+    "TypeScript Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Web Developer",
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "PostgreSQL",
+    "MySQL",
+    "Tailwind CSS",
+    "HTML5",
+    "CSS3",
+    "RESTful API",
+    "Git",
+    "Vercel",
+    "Netlify",
+    "Self-taught Developer",
+    "Portfolio",
+    "Web Applications"
+  ],
+  authors: [{ name: "Rahul Vijay" }],
+  creator: "Rahul Vijay",
+  publisher: "Rahul Vijay",
   metadataBase: new URL(siteUrl),
   alternates: {
     canonical: siteUrl,
   },
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   icons: {
     icon: [
       { url: '/icon.svg', type: 'image/svg+xml' },
@@ -42,22 +71,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    title: "Rahul - Full Stack Developer Portfolio",
-    description: "Full Stack Developer specializing in React, Next.js, Node.js. Frontend Developer at StratAgile with 2+ years experience.",
-    siteName: "Rahul Portfolio",
+    title: "Rahul Vijay - Full Stack Developer | React, Next.js, Node.js Expert",
+    description: "Self-taught Full Stack Developer specializing in React, Next.js, Node.js, Express.js, TypeScript, MongoDB, PostgreSQL. Building dynamic, scalable web applications with responsive UI and robust backend solutions.",
+    siteName: "Rahul Vijay Portfolio",
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "Rahul - Full Stack Developer Portfolio",
+        alt: "Rahul Vijay - Full Stack Developer Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rahul - Full Stack Developer Portfolio",
-    description: "Full Stack Developer specializing in React, Next.js, Node.js. Frontend Developer at StratAgile with 2+ years experience.",
+    title: "Rahul Vijay - Full Stack Developer | React, Next.js, Node.js",
+    description: "Self-taught Full Stack Developer specializing in React, Next.js, Node.js, Express.js, TypeScript. Building scalable web applications with modern JavaScript frameworks.",
     images: ["/og-image.svg"],
   },
   robots: {
@@ -71,38 +100,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  other: {
-    'application/ld+json': JSON.stringify([
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Rahul",
-        "jobTitle": "Full Stack Developer",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "StratAgile"
-        },
-        "url": "https://rahulvijay.netlify.app",
-        "sameAs": [
-          "https://github.com/rahulvijay81",
-          "https://www.linkedin.com/in/rahulvijay81/"
-        ],
-        "knowsAbout": ["React", "Next.js", "Node.js", "JavaScript", "TypeScript", "Full Stack Development"]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Rahul Portfolio",
-        "url": "https://rahulvijay.netlify.app",
-        "description": "Full Stack Developer portfolio showcasing React, Next.js, and Node.js projects",
-        "author": {
-          "@type": "Person",
-          "name": "Rahul",
-          "jobTitle": "Full Stack Developer"
-        }
-      }
-    ])
-  },
 };
 
 export default function RootLayout({
@@ -110,8 +107,84 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": `${siteUrl}/#person`,
+        "name": "Rahul Vijay",
+        "jobTitle": "Full Stack Developer",
+        "description": "Self-taught Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies",
+        "url": siteUrl,
+        "sameAs": [
+          "https://github.com/rahulvijay81",
+          "https://www.linkedin.com/in/rahulvijay81/"
+        ],
+        "knowsAbout": [
+          "React",
+          "Next.js",
+          "Node.js",
+          "Express.js",
+          "JavaScript",
+          "TypeScript",
+          "MongoDB",
+          "PostgreSQL",
+          "MySQL",
+          "Tailwind CSS",
+          "HTML5",
+          "CSS3",
+          "Git",
+          "RESTful API",
+          "Full Stack Development",
+          "Web Development"
+        ],
+        "knowsLanguage": "English"
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${siteUrl}/#website`,
+        "url": siteUrl,
+        "name": "Rahul Vijay Portfolio",
+        "description": "Full Stack Developer portfolio showcasing React, Next.js, Node.js projects and web development expertise",
+        "publisher": {
+          "@id": `${siteUrl}/#person`
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "WebPage",
+        "@id": `${siteUrl}/#webpage`,
+        "url": siteUrl,
+        "name": "Rahul Vijay - Full Stack Developer Portfolio",
+        "isPartOf": {
+          "@id": `${siteUrl}/#website`
+        },
+        "about": {
+          "@id": `${siteUrl}/#person`
+        },
+        "description": "Portfolio of Rahul Vijay, a self-taught Full Stack Developer with expertise in React, Next.js, Node.js, and modern web technologies",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "ProfilePage",
+        "mainEntity": {
+          "@id": `${siteUrl}/#person`
+        }
+      }
+    ]
+  };
+
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          strategy="beforeInteractive"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900`}
       >
