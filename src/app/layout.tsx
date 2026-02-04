@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import LenisProvider from "@/components/LenisProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -121,7 +122,7 @@ export default function RootLayout({
             gtag('config', 'G-6GBKB76L08');
           `}
         </Script>
-        {children}
+        <LenisProvider>{children}</LenisProvider>
       </body>
     </html>
   );
