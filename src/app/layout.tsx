@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
@@ -59,7 +59,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   icons: {
     icon: [
       { url: '/icon.svg', type: 'image/svg+xml' },
@@ -100,6 +99,12 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
