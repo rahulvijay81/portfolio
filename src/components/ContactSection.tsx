@@ -1,4 +1,4 @@
-import { Mail } from 'lucide-react';
+import { Mail, Download } from 'lucide-react';
 
 export default function ContactSection() {
   return (
@@ -14,6 +14,14 @@ export default function ContactSection() {
         >
           <Mail size={20} className="group-hover:rotate-12 transition-transform duration-300" />
           <span>Connect Now 🚀</span>
+        </a>
+        <a
+          href="/resume.pdf"
+          download
+          className="group inline-flex items-center space-x-2 bg-teal-500/20 backdrop-blur-sm border border-teal-500/50 hover:bg-teal-500/30 hover:border-teal-500/60 px-8 py-3 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-teal-500/20 ml-4"
+        >
+          <Download size={20} className="group-hover:translate-y-1 transition-transform duration-300" />
+          <span>Download Resume</span>
         </a>
       </div>
     </section>
