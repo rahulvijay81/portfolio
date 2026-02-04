@@ -3,6 +3,7 @@
 import { motion, Variants } from 'framer-motion';
 import AboutSection from './AboutSection';
 import ExperienceSection from './ExperienceSection';
+import SkillsSection from './SkillsSection';
 import ProjectsSection from './ProjectsSection';
 import ContactSection from './ContactSection';
 import Footer from './Footer';
@@ -56,6 +57,9 @@ export default function MainContent() {
         </motion.div>
         <motion.div variants={sectionVariants}>
           <ExperienceSection />
+        </motion.div>
+        <motion.div variants={sectionVariants}>
+          <SkillsSection />
         </motion.div>
         <motion.div variants={sectionVariants}>
           <ProjectsSection />

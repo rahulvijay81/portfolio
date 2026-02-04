@@ -1,0 +1,29 @@
+{
+  "skills": [
+    { "name": "JavaScript" },
+    { "name": "TypeScript" },
+    { "name": "React.js" },
+    { "name": "Next.js" },
+    { "name": "Redux" },
+    { "name": "Tailwind CSS" },
+    { "name": "React Native" },
+    { "name": "Vite.js" },
+    { "name": "Mini Program Studio" },
+    { "name": "Context API" },
+    { "name": "Zustand" },
+    { "name": "Node.js" },
+    { "name": "Express.js" },
+    { "name": "Strapi CMS" },
+    { "name": "MySQL" },
+    { "name": "PostgreSQL" },
+    { "name": "SQLite" },
+    { "name": "MongoDB" },
+    { "name": "Firebase" },
+    { "name": "Git" },
+    { "name": "GitHub" },
+    { "name": "Postman" },
+    { "name": "VS Code" },
+    { "name": "REST APIs" },
+    { "name": "CI/CD" }
+  ]
+}

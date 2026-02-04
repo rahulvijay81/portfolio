@@ -23,7 +23,7 @@ export default function Sidebar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'projects', 'contact'];
+      const sections = ['about', 'experience', 'skills', 'projects', 'contact'];
       const scrollPosition = window.scrollY + window.innerHeight / 2;
       const documentHeight = document.documentElement.scrollHeight;
       const windowHeight = window.innerHeight;
@@ -88,6 +88,8 @@ export default function Sidebar() {
                 }`}>About Me</button>
               <button onClick={() => smoothScrollTo('experience')} className={`block transition-colors text-left ${activeSection === 'experience' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
                 }`}>Experience</button>
+              <button onClick={() => smoothScrollTo('skills')} className={`block transition-colors text-left ${activeSection === 'skills' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
+                }`}>Skills</button>
               <button onClick={() => smoothScrollTo('projects')} className={`block transition-colors text-left ${activeSection === 'projects' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
                 }`}>Projects</button>
               <button onClick={() => smoothScrollTo('contact')} className={`block transition-colors text-left ${activeSection === 'contact' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
