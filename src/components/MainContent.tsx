@@ -39,7 +39,7 @@ const sectionVariants: Variants = {
 export default function MainContent() {
   return (
     <motion.div
-      className="w-full lg:w-3/5 lg:ml-auto h-full px-2 md:px-4 lg:px-0 pb-24 lg:pb-0 pt-24 lg:pt-0"
+      className="w-full lg:w-3/5 lg:ml-auto h-full px-2 sm:px-6 md:px-8 lg:px-0 pb-24 lg:pb-0 pt-24 lg:pt-0"
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{
@@ -48,6 +48,7 @@ export default function MainContent() {
       }}
     >
       <motion.div
+        className="space-y-8 md:space-y-0"
         variants={containerVariants}
         initial="hidden"
         animate="visible"

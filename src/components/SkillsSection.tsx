@@ -31,7 +31,7 @@ const iconMap: Record<string, React.ComponentType<{ size?: number; className?: s
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="min-h-screen flex items-center p-3 md:p-6 lg:p-8 scroll-mt-24 lg:scroll-mt-0">
+    <section id="skills" className="lg:min-h-screen flex items-center p-4 sm:p-6 md:p-8 lg:p-8 scroll-mt-24 lg:scroll-mt-0">
       <div className="w-full">
         <h2 className="text-lg md:text-3xl font-bold mb-8">Skills & Technologies</h2>
         <div className="flex flex-wrap gap-2 md:gap-3">

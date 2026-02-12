@@ -7,7 +7,7 @@ const projectsData: ProjectsData = projectsDataJson;
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="min-h-screen p-3 md:p-6 lg:p-8 scroll-mt-24 lg:scroll-mt-0">
+    <section id="projects" className="lg:min-h-screen p-4 sm:p-6 md:p-8 lg:p-8 scroll-mt-24 lg:scroll-mt-0">
       <div className="space-y-6 max-w-4xl mx-auto">
         {projectsData.projects.map((project, i) => (
           <div key={i} className="glass-effect rounded-lg p-4 md:p-6 hover:bg-white/5 transition-colors">
