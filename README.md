@@ -1,40 +1,158 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  
+# 🚀 Modern Portfolio Website
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-16.0-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.1-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-First, run the development server:
+**A stunning, modern portfolio website built with Next.js 16, featuring smooth animations, responsive design, and optimal performance.**
+
+[Live Demo](https://rahulvijay.netlify.app/) • [Report Bug](https://github.com/rahulvijay81/portfolio/issues) • [Request Feature](https://github.com/rahulvijay81/portfolio/issues)
+
+![Portfolio Preview](./image.png)
+
+</div>
+
+---
+
+## ✨ Features
+
+- 🎨 **Modern UI/UX** - Clean, professional design with smooth animations
+- 🌙 **Smooth Scrolling** - Powered by Lenis for buttery-smooth navigation
+- ⚡ **Lightning Fast** - Built with Next.js 16 and optimized for performance
+- 📱 **Fully Responsive** - Perfect experience on all devices
+- 🎭 **Framer Motion** - Beautiful animations and transitions
+- 🎯 **SEO Optimized** - Built-in sitemap and robots.txt
+- 🔒 **Type Safe** - Written in TypeScript for reliability
+- 🎨 **Tailwind CSS** - Modern utility-first styling
+
+## 🖼️ Screenshots
+
+<div align="center">
+  <img src="./image.png" alt="Portfolio Screenshot" width="800"/>
+</div>
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm, yarn, pnpm, or bun
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/rahulvijay81/portfolio.git
+
+# Navigate to project directory
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see your portfolio! 🎉
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Technology | Purpose |
+|------------|---------|
+| **Next.js 16** | React framework with App Router |
+| **React 19** | UI library |
+| **TypeScript** | Type safety |
+| **Tailwind CSS 4** | Styling |
+| **Framer Motion** | Animations |
+| **Lenis** | Smooth scrolling |
+| **Lucide React** | Icons |
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+portfolio/
+├── src/
+│   ├── app/              # Next.js app directory
+│   ├── components/       # React components
+│   ├── data/            # JSON data files
+│   ├── lib/             # Utility libraries
+│   ├── types/           # TypeScript types
+│   └── utils/           # Helper functions
+├── public/              # Static assets
+└── ...config files
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Available Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run dev      # Start development server with Turbopack
+npm run build    # Build for production
+npm run start    # Start production server
+npm run lint     # Run ESLint
+```
 
-## Deploy on Vercel
+## 🎨 Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Update Personal Info**: Edit files in `src/data/`
+   - `about.json` - About section
+   - `experience.json` - Work experience
+   - `projects.json` - Your projects
+   - `skills.json` - Technical skills
+   - `social.json` - Social links
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Modify Styling**: Customize `tailwind.config.ts` and `src/app/globals.css`
 
-## Copyright
+3. **Add Components**: Create new components in `src/components/`
+
+## 🚀 Deployment
+
+### Deploy on Vercel (Recommended)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/rahulvijay81/portfolio)
+
+1. Push your code to GitHub
+2. Import your repository on [Vercel](https://vercel.com)
+3. Vercel will automatically detect Next.js and deploy
+
+### Other Platforms
+
+- **Netlify**: Connect your repo and deploy
+- **AWS Amplify**: Use the Amplify Console
+- **Docker**: Build and deploy using containers
+
+## 📝 License
 
 © 2024 All rights reserved.
+
+## 🌟 Show Your Support
+
+Give a ⭐️ if this project helped you!
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📧 Contact
+
+Rahul Vijay - [GitHub](https://github.com/rahulvijay81) • [LinkedIn](https://www.linkedin.com/in/rahulvijay81/)
+
+Project Link: [https://github.com/rahulvijay81/portfolio](https://github.com/rahulvijay81/portfolio)
+
+---
+
+<div align="center">
+  Made with ❤️ and ☕
+  
+  **[⬆ back to top](#-modern-portfolio-website)**
+</div>
