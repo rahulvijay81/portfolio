@@ -38,3 +38,8 @@ export interface SocialMedia {
 export interface SocialMediaData {
   socialMedia: SocialMedia[];
 }
+
+export interface NavItem {
+  label: string,
+  key: string,
+}
