@@ -4,7 +4,7 @@ import { Github, Linkedin, X, Instagram, User, Briefcase, FolderOpen, Mail } fro
 import { useState, useEffect } from 'react';
 import { smoothScrollTo } from '../lib/smooth-scroll';
 import SocialData from '../data/social.json';
-import type { SocialMediaData } from '../types';
+import type { SocialMediaData, NavItem } from '../types';
 
 const socialData: SocialMediaData = SocialData;
 
@@ -17,6 +17,29 @@ const getIcon = (name: string) => {
     default: return Github;
   }
 };
+
+const navItem: NavItem[] = [
+  {
+    label: "About Me",
+    key: "about"
+  },
+  {
+    label: "Experience",
+    key: "experience"
+  },
+  {
+    label: "Skills",
+    key: "skills"
+  },
+  {
+    label: "Projects",
+    key: "projects"
+  },
+  {
+    label: "Contact Me",
+    key: "contact"
+  }
+]
 
 export default function Sidebar() {
   const [activeSection, setActiveSection] = useState('');
@@ -84,16 +107,10 @@ export default function Sidebar() {
             </p>
 
             <nav className="space-y-3">
-              <button onClick={() => smoothScrollTo('about')} className={`block transition-colors text-left ${activeSection === 'about' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
-                }`}>About Me</button>
-              <button onClick={() => smoothScrollTo('experience')} className={`block transition-colors text-left ${activeSection === 'experience' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
-                }`}>Experience</button>
-              <button onClick={() => smoothScrollTo('skills')} className={`block transition-colors text-left ${activeSection === 'skills' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
-                }`}>Skills</button>
-              <button onClick={() => smoothScrollTo('projects')} className={`block transition-colors text-left ${activeSection === 'projects' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
-                }`}>Projects</button>
-              <button onClick={() => smoothScrollTo('contact')} className={`block transition-colors text-left ${activeSection === 'contact' ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
-                }`}>Contact Me</button>
+              {navItem.map((item) => (
+                <button key={item.key} onClick={() => smoothScrollTo(item.key)} className={`block transition-colors text-left cursor-pointer ${activeSection === item.key ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'
+                  }`}>{item.label}</button>
+              ))}
             </nav>
           </div>
 
